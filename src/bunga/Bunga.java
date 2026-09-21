@@ -15,6 +15,24 @@ public class Bunga {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Kamboja bunga1 = new Kamboja("Lily", "Putih", "Sejajar", "Batang Semu", "Lembut nyaris tidak beraroma", "Afrika Selatan");
+        
+        bunga1.setNama("Kamboja");
+        bunga1.setWarna("Putih dan Kuning");
+        bunga1.setPertulanganDaun("Menyirip");
+        bunga1.setJenisBatang("Batang Lunak");
+        bunga1.setAroma("Wangi");
+        bunga1.setAsal("Amerika Tengah, Meksiko, Venezuela, dan Kepulauan Karibia");
+        
+        System.out.println("Nama\t\t\t:" + bunga1.getNama());
+        System.out.println("Warna\t\t\t:" + bunga1.getWarna());
+        System.out.println("Pertulangan Daun\t:" + bunga1.getPertulanganDaun());
+        System.out.println("Jenis Batang\t\t:" + bunga1.getJenisBatang());
+        System.out.println("Aroma\t\t\t:" + bunga1.getAroma());
+        System.out.println("Asal\t\t\t:" + bunga1.getAsal());
+        
+        System.out.println("");
     }
     
 }
