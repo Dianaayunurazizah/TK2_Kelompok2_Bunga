@@ -10,18 +10,24 @@ package bunga;
  */
 public class Mawar {
     
+    String nama;
     String warna;
     String pertulanganDaun;
     String jenisBatang;
     String aroma;
     String asal;
 
-    public Mawar(String warna, String pertulanganDaun, String jenisBatang, String aroma, String asal) {
+    public Mawar(String nama, String warna, String pertulanganDaun, String jenisBatang, String aroma, String asal) {
+        this.nama = nama;
         this.warna = warna;
         this.pertulanganDaun = pertulanganDaun;
         this.jenisBatang = jenisBatang;
         this.aroma = aroma;
         this.asal = asal;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
     }
 
     public void setWarna(String warna) {
@@ -44,6 +50,10 @@ public class Mawar {
         this.asal = asal;
     }
 
+    public String getNama() {
+        return nama;
+    }
+
     public String getWarna() {
         return warna;
     }
@@ -63,6 +73,6 @@ public class Mawar {
     public String getAsal() {
         return asal;
     }
-    
+
     
 }

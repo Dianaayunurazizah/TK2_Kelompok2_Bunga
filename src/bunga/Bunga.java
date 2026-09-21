@@ -52,6 +52,24 @@ public class Bunga {
         
         System.out.println("");
         
+        Mawar bunga3 = new Mawar("Lily", "Putih", "Sejajar", "Batang Semu", "Lembut nyaris tidak beraroma", "Afrika Selatan");
+        
+        bunga3.setNama("Mawar");
+        bunga3.setWarna("Merah");
+        bunga3.setPertulanganDaun("Menyirip");
+        bunga3.setJenisBatang("Batang Berkayu dan Berduri");
+        bunga3.setAroma("Wangi");
+        bunga3.setAsal("Benua Asia dari dataran Cina, Timur Tengah dan Eropa Timur");
+        
+        System.out.println("Nama\t\t\t:" + bunga3.getNama());
+        System.out.println("Warna\t\t\t:" + bunga3.getWarna());
+        System.out.println("Pertulangan Daun\t:" + bunga3.getPertulanganDaun());
+        System.out.println("Jenis Batang\t\t:" + bunga3.getJenisBatang());
+        System.out.println("Aroma\t\t\t:" + bunga3.getAroma());
+        System.out.println("Asal\t\t\t:" + bunga3.getAsal());
+        
+        System.out.println("");
+        
     }
     
 }
