@@ -37,6 +37,10 @@ public class Melati {
     public void setPertulanganDaun(String pertulanganDaun) {
         this.pertulanganDaun = pertulanganDaun;
     }
+    
+    public void setJenisBatang(String jenisBatang) {
+        this.jenisBatang = jenisBatang;
+    }
 
     public void setAroma(String aroma) {
         this.aroma = aroma;
@@ -46,23 +50,27 @@ public class Melati {
         this.asal = asal;
     }
 
-    public void getNama(String nama) {
-        this.nama = nama;
+    public String getNama() {
+        return nama;
     }
 
-    public void getWarna(String warna) {
-        this.warna = warna;
+    public String getWarna() {
+        return warna;
     }
 
-    public void getPertulanganDaun(String pertulanganDaun) {
-        this.pertulanganDaun = pertulanganDaun;
+    public String getPertulanganDaun() {
+        return pertulanganDaun;
+    }
+    
+    public String getJenisBatang() {
+        return jenisBatang;
     }
 
-    public void getAroma(String aroma) {
-        this.aroma = aroma;
+    public String getAroma() {
+        return aroma;
     }
 
-    public void getAsal(String asal) {
-        this.asal = asal;
+    public String getAsal() {
+        return asal;
     }
 }

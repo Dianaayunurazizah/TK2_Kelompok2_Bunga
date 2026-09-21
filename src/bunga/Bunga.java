@@ -33,6 +33,25 @@ public class Bunga {
         System.out.println("Asal\t\t\t:" + bunga1.getAsal());
         
         System.out.println("");
+        
+        Melati bunga2 = new Melati("Lily", "Putih", "Sejajar", "Batang Semu", "Lembut nyaris tidak beraroma", "Afrika Selatan");
+        
+        bunga2.setNama("Melati");
+        bunga2.setWarna("Putih");
+        bunga2.setPertulanganDaun("Menyirip");
+        bunga2.setJenisBatang("Batang Berkayu");
+        bunga2.setAroma("Wangi");
+        bunga2.setAsal("Asia Selatan, Asia Tenggara, dan Indonesia");
+        
+        System.out.println("Nama\t\t\t:" + bunga2.getNama());
+        System.out.println("Warna\t\t\t:" + bunga2.getWarna());
+        System.out.println("Pertulangan Daun\t:" + bunga2.getPertulanganDaun());
+        System.out.println("Jenis Batang\t\t:" + bunga2.getJenisBatang());
+        System.out.println("Aroma\t\t\t:" + bunga2.getAroma());
+        System.out.println("Asal\t\t\t:" + bunga2.getAsal());
+        
+        System.out.println("");
+        
     }
     
 }
