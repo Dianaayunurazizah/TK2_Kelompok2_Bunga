@@ -88,6 +88,23 @@ public class Bunga {
         
         System.out.println("");
         
+        Sakura bunga5 = new Sakura("Lily", "Putih", "Sejajar", "Batang Semu", "Lembut nyaris tidak beraroma", "Afrika Selatan");
+        
+        bunga5.setNama("Sakura");
+        bunga5.setWarna("Merah muda");
+        bunga5.setPertulanganDaun("Menyirip");
+        bunga5.setJenisBatang("Berkayu dan Bercabang");
+        bunga5.setAroma("Ringan dan lembut");
+        bunga5.setAsal("Jepang");
+        
+        System.out.println("Nama\t\t\t:" + bunga5.getNama());
+        System.out.println("Warna\t\t\t:" + bunga5.getWarna());
+        System.out.println("Pertulangan Daun\t:" + bunga5.getPertulanganDaun());
+        System.out.println("Jenis Batang\t\t:" + bunga5.getJenisBatang());
+        System.out.println("Aroma\t\t\t:" + bunga5.getAroma());
+        System.out.println("Asal\t\t\t:" + bunga5.getAsal());
+        
+        System.out.println("");
     }
     
 }
