@@ -46,10 +46,10 @@ public class frameAnggrek extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         tNama = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -75,6 +75,9 @@ public class frameAnggrek extends javax.swing.JFrame {
         lAroma = new javax.swing.JLabel();
         lAsal = new javax.swing.JLabel();
 
+        jLabel3.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
+        jLabel3.setText("Warna Bunga            :");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Poppins SemiBold", 0, 24)); // NOI18N
@@ -83,9 +86,6 @@ public class frameAnggrek extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         jLabel2.setText("Nama Bunga             :");
-
-        jLabel3.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
-        jLabel3.setText("Warna Bunga            :");
 
         jLabel4.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         jLabel4.setText("Pertulangan Daun   :");
@@ -221,7 +221,6 @@ public class frameAnggrek extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -248,9 +247,7 @@ public class frameAnggrek extends javax.swing.JFrame {
                     .addComponent(tNama, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(tWarna, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(tWarna, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tDaun, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -281,7 +278,7 @@ public class frameAnggrek extends javax.swing.JFrame {
 
     private void bSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bSimpanActionPerformed
         // TODO add your handling code here:
-        Kamboja bunga = new Kamboja();
+        Anggrek bunga = new Anggrek();
 
         bunga.setNama(tNama.getText());
         bunga.setWarna(tWarna.getText());

@@ -15,6 +15,15 @@ public class Anggrek {
     String jenisBatang;
     String aroma;
     String asal;
+    
+    public Anggrek(){
+        nama = "";
+        warna = "";
+        pertulanganDaun = "";
+        jenisBatang = "";
+        aroma = "";
+        asal = "";
+    }
 
     public Anggrek(String nama, String warna, String pertulanganDaun, String jenisBatang, String aroma, String asal) {
         this.nama = nama;
