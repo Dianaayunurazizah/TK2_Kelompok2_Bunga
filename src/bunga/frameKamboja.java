@@ -17,6 +17,8 @@ public class frameKamboja extends javax.swing.JFrame {
      */
     public frameKamboja() {
         initComponents();
+        
+        reset();
     }
     
     void reset(){
