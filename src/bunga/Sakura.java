@@ -16,6 +16,15 @@ public class Sakura {
     String jenisBatang;
     String aroma;
     String asal;
+    
+    public Sakura(){
+        nama = "";
+        warna = "";
+        pertulanganDaun = "";
+        jenisBatang = "";
+        aroma = "";
+        asal = "";
+    }
 
     public Sakura(String nama, String warna, String pertulanganDaun, String jenisBatang, String aroma, String asal) {
         this.nama = nama;
