@@ -281,7 +281,7 @@ public class frameSakura extends javax.swing.JFrame {
 
     private void bSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bSimpanActionPerformed
         // TODO add your handling code here:
-        Kamboja bunga = new Kamboja();
+        Sakura bunga = new Sakura();
 
         bunga.setNama(tNama.getText());
         bunga.setWarna(tWarna.getText());
