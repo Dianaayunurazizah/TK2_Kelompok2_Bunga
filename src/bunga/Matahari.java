@@ -16,6 +16,14 @@ public class Matahari {
     String aroma;
     String asal;
 
+    public Matahari(){
+        this.nama = "";
+        this.warna = "";
+        this.pertulanganDaun = "";
+        this.jenisBatang = "";
+        this.aroma = "";
+        this.asal = "";
+    }
     public Matahari(String nama, String warna, String pertulanganDaun, String jenisBatang, String aroma, String asal) {
         this.nama = nama;
         this.warna = warna;
