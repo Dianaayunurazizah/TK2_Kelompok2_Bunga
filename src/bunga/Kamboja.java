@@ -16,6 +16,15 @@ public class Kamboja {
     String jenisBatang;
     String aroma;
     String asal;
+    
+    public Kamboja(){
+        this.nama = "";
+        this.warna = "";
+        this.pertulanganDaun = "";
+        this.jenisBatang = "";
+        this.aroma = "";
+        this.asal = "";
+    }
 
     public Kamboja(String nama, String warna, String pertulanganDaun, String jenisBatang, String aroma, String asal) {
         this.nama = nama;
