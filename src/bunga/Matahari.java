@@ -17,12 +17,12 @@ public class Matahari {
     String asal;
 
     public Matahari(){
-        this.nama = "";
-        this.warna = "";
-        this.pertulanganDaun = "";
-        this.jenisBatang = "";
-        this.aroma = "";
-        this.asal = "";
+        nama = "";
+        warna = "";
+        pertulanganDaun = "";
+        jenisBatang = "";
+        aroma = "";
+        asal = "";
     }
     public Matahari(String nama, String warna, String pertulanganDaun, String jenisBatang, String aroma, String asal) {
         this.nama = nama;
