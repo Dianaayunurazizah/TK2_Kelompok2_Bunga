@@ -10,22 +10,22 @@ import javax.swing.UnsupportedLookAndFeelException;
 
 /**
  *
- * @author ASUS
+ * @author Acer
  */
-public class frameKamboja extends javax.swing.JFrame {
+public class frameMelati extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frameKamboja.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frameMelati.class.getName());
 
     /**
-     * Creates new form frameKamboja
+     * Creates new form frameMelati
      */
-    public frameKamboja() {
+    public frameMelati() {
         initComponents();
         
         reset();
     }
     
-    void reset(){
+     void reset(){
         tNama.setText(null);
         tAroma.setText(null);
         tAsal.setText(null);
@@ -37,10 +37,9 @@ public class frameKamboja extends javax.swing.JFrame {
         lAroma.setText(null);
         lAsal.setText(null);
     }
-    
-    
-    void simpan(){
-        Kamboja bunga = new Kamboja();
+     
+     void simpan(){
+        Melati bunga = new Melati();
 
         bunga.setNama(tNama.getText());
         bunga.setWarna(cWarna.getSelectedItem().toString());
@@ -119,12 +118,11 @@ public class frameKamboja extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setMaximumSize(new java.awt.Dimension(660, 877));
         jPanel2.setMinimumSize(new java.awt.Dimension(660, 877));
-        jPanel2.setPreferredSize(new java.awt.Dimension(660, 877));
 
         jLabel1.setFont(new java.awt.Font("Poppins SemiBold", 0, 32)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/bunga.png"))); // NOI18N
-        jLabel1.setText("Kamboja");
+        jLabel1.setText("Melati");
         jLabel1.setIconTextGap(12);
 
         bSimpan.setBackground(new java.awt.Color(0, 153, 102));
@@ -312,7 +310,7 @@ public class frameKamboja extends javax.swing.JFrame {
         jPanel5.add(tNama);
 
         cWarna.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
-        cWarna.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Putih", "Kuning", "Merah Muda", "Merah Tua" }));
+        cWarna.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Putih Bersih", "Putih Kekuningan", "Kuning Muda" }));
         cWarna.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 cWarnaKeyReleased(evt);
@@ -330,7 +328,7 @@ public class frameKamboja extends javax.swing.JFrame {
         jPanel5.add(cDaun);
 
         cBatang.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
-        cBatang.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Batang Keras (Berkayu)", "Batang Lunak" }));
+        cBatang.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Batang Keras", "Batang Lunak", "Rumput" }));
         cBatang.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 cBatangKeyReleased(evt);
@@ -372,7 +370,7 @@ public class frameKamboja extends javax.swing.JFrame {
                                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 451, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 9, Short.MAX_VALUE)))
+                        .addGap(0, 30, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(149, 149, 149)
@@ -397,7 +395,7 @@ public class frameKamboja extends javax.swing.JFrame {
                     .addComponent(bReset, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(25, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel2, java.awt.BorderLayout.CENTER);
@@ -420,11 +418,6 @@ public class frameKamboja extends javax.swing.JFrame {
         simpan();
     }//GEN-LAST:event_tNamaKeyReleased
 
-    private void tAromaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tAromaKeyReleased
-        // TODO add your handling code here:
-        simpan();
-    }//GEN-LAST:event_tAromaKeyReleased
-
     private void cWarnaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cWarnaKeyReleased
         // TODO add your handling code here:
         simpan();
@@ -439,6 +432,11 @@ public class frameKamboja extends javax.swing.JFrame {
         // TODO add your handling code here:
         simpan();
     }//GEN-LAST:event_cBatangKeyReleased
+
+    private void tAromaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tAromaKeyReleased
+        // TODO add your handling code here:
+        simpan();
+    }//GEN-LAST:event_tAromaKeyReleased
 
     private void tAsalKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tAsalKeyReleased
         // TODO add your handling code here:
@@ -467,7 +465,7 @@ public class frameKamboja extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new frameKamboja().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new frameMelati().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

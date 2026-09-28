@@ -16,6 +16,15 @@ public class Melati {
     String jenisBatang;
     String aroma;
     String asal;
+    
+     public Melati(){
+        nama = "";
+        warna = "";
+        pertulanganDaun = "";
+        jenisBatang = "";
+        aroma = "";
+        asal = "";
+    }
 
     public Melati(String nama, String warna, String pertulanganDaun, String jenisBatang, String aroma, String asal) {
         this.nama = nama;
