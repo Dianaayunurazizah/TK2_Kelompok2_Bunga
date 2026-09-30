@@ -121,7 +121,7 @@ public class frameMelati extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Poppins SemiBold", 0, 32)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/bunga.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/icon melati.png"))); // NOI18N
         jLabel1.setText("Melati");
         jLabel1.setIconTextGap(12);
 
@@ -395,7 +395,7 @@ public class frameMelati extends javax.swing.JFrame {
                     .addComponent(bReset, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addContainerGap(31, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel2, java.awt.BorderLayout.CENTER);
