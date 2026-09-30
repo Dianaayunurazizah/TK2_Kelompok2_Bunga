@@ -51,7 +51,7 @@ public class mainFrame extends javax.swing.JFrame {
     public void panelRounded(JPanel panel){
         
         panel.setBorder(new FlatLineBorder(
-                new Insets(0, 0, 0, 0), new Color(147, 147, 147), 1f, 25
+                new Insets(0, 0, 0, 0), new Color(147, 147, 147), 0, 25
         ));
     }
     
