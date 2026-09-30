@@ -359,6 +359,11 @@ public class frameMawar extends javax.swing.JFrame {
         jPanel5.add(tAsal);
 
         lblBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/arrow left.png"))); // NOI18N
+        lblBack.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblBackMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -456,6 +461,13 @@ public class frameMawar extends javax.swing.JFrame {
         // TODO add your handling code here:
         simpan();
     }//GEN-LAST:event_tAsalKeyReleased
+
+    private void lblBackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBackMouseClicked
+        // TODO add your handling code here:
+        
+        new mainFrame().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_lblBackMouseClicked
 
     /**
      * @param args the command line arguments
