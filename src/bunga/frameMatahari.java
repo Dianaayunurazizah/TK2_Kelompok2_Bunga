@@ -313,29 +313,17 @@ public class frameMatahari extends javax.swing.JFrame {
 
         cWarna.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         cWarna.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Kuning", "Orange", "Kuning Kecoklatan" }));
-        cWarna.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                cWarnaKeyReleased(evt);
-            }
-        });
+        cWarna.addActionListener(this::cWarnaActionPerformed);
         jPanel5.add(cWarna);
 
         cDaun.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         cDaun.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Menyirip", "Sejajar", "Menjari" }));
-        cDaun.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                cDaunKeyReleased(evt);
-            }
-        });
+        cDaun.addActionListener(this::cDaunActionPerformed);
         jPanel5.add(cDaun);
 
         cBatang.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         cBatang.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Batang tegak", "Batang bercabang", "Batang berbulu" }));
-        cBatang.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                cBatangKeyReleased(evt);
-            }
-        });
+        cBatang.addActionListener(this::cBatangActionPerformed);
         jPanel5.add(cBatang);
 
         tAroma.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
@@ -431,21 +419,6 @@ public class frameMatahari extends javax.swing.JFrame {
         simpan();
     }//GEN-LAST:event_tNamaKeyReleased
 
-    private void cWarnaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cWarnaKeyReleased
-        // TODO add your handling code here:
-        simpan();
-    }//GEN-LAST:event_cWarnaKeyReleased
-
-    private void cDaunKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cDaunKeyReleased
-        // TODO add your handling code here:
-        simpan();
-    }//GEN-LAST:event_cDaunKeyReleased
-
-    private void cBatangKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cBatangKeyReleased
-        // TODO add your handling code here:
-        simpan();
-    }//GEN-LAST:event_cBatangKeyReleased
-
     private void tAromaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tAromaKeyReleased
         // TODO add your handling code here:
         simpan();
@@ -462,6 +435,21 @@ public class frameMatahari extends javax.swing.JFrame {
 
         dispose();
     }//GEN-LAST:event_lblBackMouseClicked
+
+    private void cWarnaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cWarnaActionPerformed
+        // TODO add your handling code here:
+        simpan();
+    }//GEN-LAST:event_cWarnaActionPerformed
+
+    private void cDaunActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cDaunActionPerformed
+        // TODO add your handling code here:
+        simpan();
+    }//GEN-LAST:event_cDaunActionPerformed
+
+    private void cBatangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cBatangActionPerformed
+        // TODO add your handling code here:
+        simpan();
+    }//GEN-LAST:event_cBatangActionPerformed
 
     /**
      * @param args the command line arguments
