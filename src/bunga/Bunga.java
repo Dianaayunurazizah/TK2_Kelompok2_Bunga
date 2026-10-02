@@ -16,7 +16,7 @@ public class Bunga {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Kamboja bunga1 = new Kamboja("Lily", "Putih", "Sejajar", "Batang Semu", "Lembut nyaris tidak beraroma", "Afrika Selatan");
+        Kamboja bunga1 = new Kamboja();
         
         bunga1.setNama("Kamboja");
         bunga1.setWarna("Putih dan Kuning");
@@ -34,7 +34,7 @@ public class Bunga {
         
         System.out.println("");
         
-        Melati bunga2 = new Melati("Lily", "Putih", "Sejajar", "Batang Semu", "Lembut nyaris tidak beraroma", "Afrika Selatan");
+        Melati bunga2 = new Melati();
         
         bunga2.setNama("Melati");
         bunga2.setWarna("Putih");
@@ -52,7 +52,7 @@ public class Bunga {
         
         System.out.println("");
         
-        Mawar bunga3 = new Mawar("Lily", "Putih", "Sejajar", "Batang Semu", "Lembut nyaris tidak beraroma", "Afrika Selatan");
+        Mawar bunga3 = new Mawar();
         
         bunga3.setNama("Mawar");
         bunga3.setWarna("Merah");
@@ -70,7 +70,7 @@ public class Bunga {
         
         System.out.println("");
        
-        Matahari bunga4 = new Matahari("Lily", "Putih", "Sejajar", "Batang Semu", "Lembut nyaris tidak beraroma", "Afrika Selatan");
+        Matahari bunga4 = new Matahari();
         
         bunga4.setNama("Matahari");
         bunga4.setWarna("Kuning");
@@ -88,7 +88,7 @@ public class Bunga {
         
         System.out.println("");
         
-        Sakura bunga5 = new Sakura("Lily", "Putih", "Sejajar", "Batang Semu", "Lembut nyaris tidak beraroma", "Afrika Selatan");
+        Sakura bunga5 = new Sakura();
         
         bunga5.setNama("Sakura");
         bunga5.setWarna("Merah muda");
@@ -106,7 +106,7 @@ public class Bunga {
         
         System.out.println("");
         
-        Anggrek bunga6 = new Anggrek("Lily", "Putih", "Sejajar", "Batang Semu", "Lembut nyaris tidak beraroma", "Afrika Selatan");
+        Anggrek bunga6 = new Anggrek();
         
         bunga6.setNama("Anggrek");
         bunga6.setWarna("Merah muda");
