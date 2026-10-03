@@ -15,12 +15,14 @@ import javax.swing.JPanel;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
+import models.User;
+
 /**
  *
  * @author ASUS
  */
 public class mainFrame extends javax.swing.JFrame {
-    
+
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(mainFrame.class.getName());
 
     /**
@@ -28,17 +30,18 @@ public class mainFrame extends javax.swing.JFrame {
      */
     public mainFrame() {
         initComponents();
+
+        User objek = new User();
         
-        
+        tUser.setText(objek.getUsername());
+
         panelRounded(panelAnggrek);
         panelRounded(panelKamboja);
         panelRounded(panelMatahari);
         panelRounded(panelMawar);
         panelRounded(panelMelati);
         panelRounded(panelSakura);
-        
-        
-        
+
         tambahMouseListener(panelAnggrek);
         tambahMouseListener(panelKamboja);
         tambahMouseListener(panelMatahari);
@@ -47,33 +50,32 @@ public class mainFrame extends javax.swing.JFrame {
         tambahMouseListener(panelSakura);
 
     }
-    
-    public void panelRounded(JPanel panel){
-        
+
+    public void panelRounded(JPanel panel) {
+
         panel.setBorder(new FlatLineBorder(
                 new Insets(0, 0, 0, 0), new Color(147, 147, 147), 0, 25
         ));
     }
-    
-    
-    private void tambahMouseListener(JPanel panel){
-        
+
+    private void tambahMouseListener(JPanel panel) {
+
         Color warnaNormal = new Color(255, 255, 255);
         Color warnaHover = new Color(230, 244, 253);
-        
+
         panel.setOpaque(true);
         panel.setBackground(warnaNormal);
         panel.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        
-        panel.addMouseListener(new MouseAdapter(){
-            
+
+        panel.addMouseListener(new MouseAdapter() {
+
             @Override
-            public void mouseEntered(MouseEvent e){
+            public void mouseEntered(MouseEvent e) {
                 panel.setBackground(warnaHover);
             }
-            
+
             @Override
-            public void mouseExited(MouseEvent e){
+            public void mouseExited(MouseEvent e) {
                 panel.setBackground(warnaNormal);
             }
         });
@@ -413,6 +415,7 @@ public class mainFrame extends javax.swing.JFrame {
         jLabel21.setText("semangat, dan awal yang baru.");
 
         tUser.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
+        tUser.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         tUser.setText("user");
 
         jLabel23.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
@@ -425,9 +428,6 @@ public class mainFrame extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(40, 40, 40)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -436,9 +436,12 @@ public class mainFrame extends javax.swing.JFrame {
                         .addGap(0, 35, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
                         .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(tUser, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(tUser, javax.swing.GroupLayout.PREFERRED_SIZE, 411, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -452,10 +455,12 @@ public class mainFrame extends javax.swing.JFrame {
                 .addComponent(jLabel21)
                 .addGap(40, 40, 40)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tUser, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel23, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(tUser, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())))
         );
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
@@ -467,42 +472,42 @@ public class mainFrame extends javax.swing.JFrame {
     private void panelAnggrekMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelAnggrekMouseClicked
         // TODO add your handling code here:
         new frameAnggrek().setVisible(true);
-        
+
         dispose();
     }//GEN-LAST:event_panelAnggrekMouseClicked
 
     private void panelKambojaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelKambojaMouseClicked
         // TODO add your handling code here:
         new frameKamboja().setVisible(true);
-        
+
         dispose();
     }//GEN-LAST:event_panelKambojaMouseClicked
 
     private void panelMatahariMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelMatahariMouseClicked
         // TODO add your handling code here:
         new frameMatahari().setVisible(true);
-        
+
         dispose();
     }//GEN-LAST:event_panelMatahariMouseClicked
 
     private void panelMawarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelMawarMouseClicked
         // TODO add your handling code here:
         new frameMawar().setVisible(true);
-        
+
         dispose();
     }//GEN-LAST:event_panelMawarMouseClicked
 
     private void panelMelatiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelMelatiMouseClicked
         // TODO add your handling code here:
         new frameMelati().setVisible(true);
-        
+
         dispose();
     }//GEN-LAST:event_panelMelatiMouseClicked
 
     private void panelSakuraMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelSakuraMouseClicked
         // TODO add your handling code here:
         new frameSakura().setVisible(true);
-        
+
         dispose();
     }//GEN-LAST:event_panelSakuraMouseClicked
 
