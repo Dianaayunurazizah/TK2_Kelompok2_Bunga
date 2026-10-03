@@ -2,34 +2,34 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package bunga;
+package views;
 
 import com.formdev.flatlaf.FlatLightLaf;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+import models.Anggrek;
 
 /**
  *
- * @author ThinkPad
+ * @author Admin
  */
-public class frameMatahari extends javax.swing.JFrame {
+public class frameAnggrek extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frameMatahari.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frameAnggrek.class.getName());
 
     /**
-     * Creates new form JFrameMatahari
+     * Creates new form frameAnggrek
      */
-    public frameMatahari() {
+    public frameAnggrek() {
         initComponents();
         
         reset();
     }
     
-     void reset(){
+    void reset(){
         tNama.setText(null);
         tAroma.setText(null);
         tAsal.setText(null);
-        
         lNama.setText(null);
         lWarna.setText(null);
         lDaun.setText(null);
@@ -37,10 +37,9 @@ public class frameMatahari extends javax.swing.JFrame {
         lAroma.setText(null);
         lAsal.setText(null);
     }
-     
-     
+    
      void simpan(){
-        Matahari bunga = new Matahari();
+        Anggrek bunga = new Anggrek();
 
         bunga.setNama(tNama.getText());
         bunga.setWarna(cWarna.getSelectedItem().toString());
@@ -66,6 +65,7 @@ public class frameMatahari extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel3 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         bSimpan = new javax.swing.JButton();
@@ -94,18 +94,18 @@ public class frameMatahari extends javax.swing.JFrame {
         lAsal = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         tNama = new javax.swing.JTextField();
         cWarna = new javax.swing.JComboBox<>();
@@ -115,6 +115,9 @@ public class frameMatahari extends javax.swing.JFrame {
         tAsal = new javax.swing.JTextField();
         lblBack = new javax.swing.JLabel();
 
+        jLabel3.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
+        jLabel3.setText("Warna Bunga            :");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
@@ -123,20 +126,20 @@ public class frameMatahari extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Poppins SemiBold", 0, 32)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/icon matahari.png"))); // NOI18N
-        jLabel1.setText("Matahari");
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/icon anggrek.png"))); // NOI18N
+        jLabel1.setText("Anggrek");
         jLabel1.setIconTextGap(12);
 
         bSimpan.setBackground(new java.awt.Color(0, 153, 102));
         bSimpan.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
         bSimpan.setForeground(new java.awt.Color(255, 255, 255));
-        bSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/save.png"))); // NOI18N
+        bSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/save.png"))); // NOI18N
         bSimpan.setText("Simpan");
         bSimpan.addActionListener(this::bSimpanActionPerformed);
 
         bReset.setBackground(new java.awt.Color(224, 231, 239));
         bReset.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
-        bReset.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/reset.png"))); // NOI18N
+        bReset.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/reset.png"))); // NOI18N
         bReset.setText("Reset");
         bReset.addActionListener(this::bResetActionPerformed);
 
@@ -253,9 +256,9 @@ public class frameMatahari extends javax.swing.JFrame {
         jLabel2.setText("Nama Bunga         ");
         jPanel1.add(jLabel2);
 
-        jLabel3.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
-        jLabel3.setText("Warna Bunga         ");
-        jPanel1.add(jLabel3);
+        jLabel15.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
+        jLabel15.setText("Warna Bunga         ");
+        jPanel1.add(jLabel15);
 
         jLabel4.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         jLabel4.setText("Pertulangan Daun  ");
@@ -280,10 +283,6 @@ public class frameMatahari extends javax.swing.JFrame {
         jLabel14.setText(":");
         jPanel4.add(jLabel14);
 
-        jLabel15.setFont(new java.awt.Font("Poppins SemiBold", 0, 16)); // NOI18N
-        jLabel15.setText(":");
-        jPanel4.add(jLabel15);
-
         jLabel16.setFont(new java.awt.Font("Poppins SemiBold", 0, 16)); // NOI18N
         jLabel16.setText(":");
         jPanel4.add(jLabel16);
@@ -300,6 +299,10 @@ public class frameMatahari extends javax.swing.JFrame {
         jLabel19.setText(":");
         jPanel4.add(jLabel19);
 
+        jLabel32.setFont(new java.awt.Font("Poppins SemiBold", 0, 16)); // NOI18N
+        jLabel32.setText(":");
+        jPanel4.add(jLabel32);
+
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
         jPanel5.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
 
@@ -312,17 +315,17 @@ public class frameMatahari extends javax.swing.JFrame {
         jPanel5.add(tNama);
 
         cWarna.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
-        cWarna.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Kuning", "Orange", "Kuning Kecoklatan" }));
+        cWarna.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Putih", "Kuning", "Merah Muda", "Merah Tua" }));
         cWarna.addActionListener(this::cWarnaActionPerformed);
         jPanel5.add(cWarna);
 
         cDaun.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
-        cDaun.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Menyirip", "Sejajar", "Menjari" }));
+        cDaun.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Sejajar ", "Menyirip", "Menjari" }));
         cDaun.addActionListener(this::cDaunActionPerformed);
         jPanel5.add(cDaun);
 
         cBatang.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
-        cBatang.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Batang tegak", "Batang bercabang", "Batang berbulu" }));
+        cBatang.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Batang Keras ", "Batang Lunak" }));
         cBatang.addActionListener(this::cBatangActionPerformed);
         jPanel5.add(cBatang);
 
@@ -342,7 +345,7 @@ public class frameMatahari extends javax.swing.JFrame {
         });
         jPanel5.add(tAsal);
 
-        lblBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/arrow left.png"))); // NOI18N
+        lblBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/arrow left.png"))); // NOI18N
         lblBack.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblBackMouseClicked(evt);
@@ -365,8 +368,8 @@ public class frameMatahari extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addComponent(lblBack)
-                                .addGap(181, 181, 181)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(157, 157, 157)
+                                .addComponent(jLabel1))
                             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(jPanel2Layout.createSequentialGroup()
@@ -429,6 +432,11 @@ public class frameMatahari extends javax.swing.JFrame {
         simpan();
     }//GEN-LAST:event_tAsalKeyReleased
 
+    private void cBatangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cBatangActionPerformed
+        // TODO add your handling code here:
+        simpan();
+    }//GEN-LAST:event_cBatangActionPerformed
+
     private void lblBackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBackMouseClicked
         // TODO add your handling code here:
         new mainFrame().setVisible(true);
@@ -445,11 +453,6 @@ public class frameMatahari extends javax.swing.JFrame {
         // TODO add your handling code here:
         simpan();
     }//GEN-LAST:event_cDaunActionPerformed
-
-    private void cBatangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cBatangActionPerformed
-        // TODO add your handling code here:
-        simpan();
-    }//GEN-LAST:event_cBatangActionPerformed
 
     /**
      * @param args the command line arguments
@@ -473,7 +476,7 @@ public class frameMatahari extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new frameMatahari().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new frameAnggrek().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -503,6 +506,7 @@ public class frameMatahari extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;

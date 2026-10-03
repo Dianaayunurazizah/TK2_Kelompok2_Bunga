@@ -2,11 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package bunga;
+package views;
 
 import com.formdev.flatlaf.FlatLightLaf;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+import models.Mawar;
 
 
 
@@ -127,20 +128,20 @@ public class frameMawar extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Poppins SemiBold", 0, 32)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/icon mawar.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/icon mawar.png"))); // NOI18N
         jLabel1.setText("Mawar");
         jLabel1.setIconTextGap(12);
 
         bSimpan.setBackground(new java.awt.Color(0, 153, 102));
         bSimpan.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
         bSimpan.setForeground(new java.awt.Color(255, 255, 255));
-        bSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/save.png"))); // NOI18N
+        bSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/save.png"))); // NOI18N
         bSimpan.setText("Simpan");
         bSimpan.addActionListener(this::bSimpanActionPerformed);
 
         bReset.setBackground(new java.awt.Color(224, 231, 239));
         bReset.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
-        bReset.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/reset.png"))); // NOI18N
+        bReset.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/reset.png"))); // NOI18N
         bReset.setText("Reset");
         bReset.addActionListener(this::bResetActionPerformed);
 
@@ -346,7 +347,7 @@ public class frameMawar extends javax.swing.JFrame {
         });
         jPanel5.add(tAsal);
 
-        lblBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/arrow left.png"))); // NOI18N
+        lblBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/arrow left.png"))); // NOI18N
         lblBack.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblBackMouseClicked(evt);

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package bunga;
+package views;
 
 import com.formdev.flatlaf.FlatLightLaf;
 import com.formdev.flatlaf.ui.FlatLineBorder;
@@ -138,9 +138,9 @@ public class mainFrame extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Poppins Medium", 0, 24)); // NOI18N
         jLabel2.setText("Anggrek");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/anggrek.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/anggrek.png"))); // NOI18N
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/arrow kanan.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/arrow kanan.png"))); // NOI18N
 
         javax.swing.GroupLayout panelAnggrekLayout = new javax.swing.GroupLayout(panelAnggrek);
         panelAnggrek.setLayout(panelAnggrekLayout);
@@ -184,9 +184,9 @@ public class mainFrame extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Poppins Medium", 0, 24)); // NOI18N
         jLabel5.setText("Kamboja");
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/kamboja.png"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/kamboja.png"))); // NOI18N
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/arrow kanan.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/arrow kanan.png"))); // NOI18N
 
         javax.swing.GroupLayout panelKambojaLayout = new javax.swing.GroupLayout(panelKamboja);
         panelKamboja.setLayout(panelKambojaLayout);
@@ -228,9 +228,9 @@ public class mainFrame extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Poppins Medium", 0, 24)); // NOI18N
         jLabel8.setText("Matahari");
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/matahari.png"))); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/matahari.png"))); // NOI18N
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/arrow kanan.png"))); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/arrow kanan.png"))); // NOI18N
 
         javax.swing.GroupLayout panelMatahariLayout = new javax.swing.GroupLayout(panelMatahari);
         panelMatahari.setLayout(panelMatahariLayout);
@@ -271,9 +271,9 @@ public class mainFrame extends javax.swing.JFrame {
         jLabel11.setFont(new java.awt.Font("Poppins Medium", 0, 24)); // NOI18N
         jLabel11.setText("Mawar");
 
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/Mawar.png"))); // NOI18N
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/Mawar.png"))); // NOI18N
 
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/arrow kanan.png"))); // NOI18N
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/arrow kanan.png"))); // NOI18N
 
         javax.swing.GroupLayout panelMawarLayout = new javax.swing.GroupLayout(panelMawar);
         panelMawar.setLayout(panelMawarLayout);
@@ -317,9 +317,9 @@ public class mainFrame extends javax.swing.JFrame {
         jLabel14.setFont(new java.awt.Font("Poppins Medium", 0, 24)); // NOI18N
         jLabel14.setText("Melati");
 
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/Melati.png"))); // NOI18N
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/Melati.png"))); // NOI18N
 
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/arrow kanan.png"))); // NOI18N
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/arrow kanan.png"))); // NOI18N
 
         javax.swing.GroupLayout panelMelatiLayout = new javax.swing.GroupLayout(panelMelati);
         panelMelati.setLayout(panelMelatiLayout);
@@ -363,9 +363,9 @@ public class mainFrame extends javax.swing.JFrame {
         jLabel17.setFont(new java.awt.Font("Poppins Medium", 0, 24)); // NOI18N
         jLabel17.setText("Sakura");
 
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/sakura.png"))); // NOI18N
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/sakura.png"))); // NOI18N
 
-        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/arrow kanan.png"))); // NOI18N
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/arrow kanan.png"))); // NOI18N
 
         javax.swing.GroupLayout panelSakuraLayout = new javax.swing.GroupLayout(panelSakura);
         panelSakura.setLayout(panelSakuraLayout);

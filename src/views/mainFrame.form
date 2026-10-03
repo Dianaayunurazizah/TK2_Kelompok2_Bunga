@@ -160,14 +160,14 @@
                 <Component class="javax.swing.JLabel" name="jLabel3">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/bunga/icon/anggrek.png"/>
+                      <Image iconType="3" name="/models/icon/anggrek.png"/>
                     </Property>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel4">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/bunga/icon/arrow kanan.png"/>
+                      <Image iconType="3" name="/models/icon/arrow kanan.png"/>
                     </Property>
                   </Properties>
                 </Component>
@@ -228,14 +228,14 @@
                 <Component class="javax.swing.JLabel" name="jLabel6">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/bunga/icon/kamboja.png"/>
+                      <Image iconType="3" name="/models/icon/kamboja.png"/>
                     </Property>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel7">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/bunga/icon/arrow kanan.png"/>
+                      <Image iconType="3" name="/models/icon/arrow kanan.png"/>
                     </Property>
                   </Properties>
                 </Component>
@@ -295,14 +295,14 @@
                 <Component class="javax.swing.JLabel" name="jLabel9">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/bunga/icon/matahari.png"/>
+                      <Image iconType="3" name="/models/icon/matahari.png"/>
                     </Property>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel10">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/bunga/icon/arrow kanan.png"/>
+                      <Image iconType="3" name="/models/icon/arrow kanan.png"/>
                     </Property>
                   </Properties>
                 </Component>
@@ -367,14 +367,14 @@
                 <Component class="javax.swing.JLabel" name="jLabel12">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/bunga/icon/Mawar.png"/>
+                      <Image iconType="3" name="/models/icon/Mawar.png"/>
                     </Property>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel13">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/bunga/icon/arrow kanan.png"/>
+                      <Image iconType="3" name="/models/icon/arrow kanan.png"/>
                     </Property>
                   </Properties>
                 </Component>
@@ -439,14 +439,14 @@
                 <Component class="javax.swing.JLabel" name="jLabel15">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/bunga/icon/Melati.png"/>
+                      <Image iconType="3" name="/models/icon/Melati.png"/>
                     </Property>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel16">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/bunga/icon/arrow kanan.png"/>
+                      <Image iconType="3" name="/models/icon/arrow kanan.png"/>
                     </Property>
                   </Properties>
                 </Component>
@@ -511,14 +511,14 @@
                 <Component class="javax.swing.JLabel" name="jLabel18">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/bunga/icon/sakura.png"/>
+                      <Image iconType="3" name="/models/icon/sakura.png"/>
                     </Property>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel19">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/bunga/icon/arrow kanan.png"/>
+                      <Image iconType="3" name="/models/icon/arrow kanan.png"/>
                     </Property>
                   </Properties>
                 </Component>

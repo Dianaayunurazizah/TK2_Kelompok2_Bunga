@@ -2,21 +2,22 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package bunga;
+package models;
 
 /**
  *
- * @author ThinkPad
+ * @author Acer
  */
-public class Matahari {
+public class Melati {
+
     String nama;
     String warna;
     String pertulanganDaun;
     String jenisBatang;
     String aroma;
     String asal;
-
-    public Matahari(){
+    
+     public Melati(){
         nama = "";
         warna = "";
         pertulanganDaun = "";
@@ -24,7 +25,8 @@ public class Matahari {
         aroma = "";
         asal = "";
     }
-    public Matahari(String nama, String warna, String pertulanganDaun, String jenisBatang, String aroma, String asal) {
+
+    public Melati(String nama, String warna, String pertulanganDaun, String jenisBatang, String aroma, String asal) {
         this.nama = nama;
         this.warna = warna;
         this.pertulanganDaun = pertulanganDaun;
@@ -44,7 +46,7 @@ public class Matahari {
     public void setPertulanganDaun(String pertulanganDaun) {
         this.pertulanganDaun = pertulanganDaun;
     }
-
+    
     public void setJenisBatang(String jenisBatang) {
         this.jenisBatang = jenisBatang;
     }
@@ -68,7 +70,7 @@ public class Matahari {
     public String getPertulanganDaun() {
         return pertulanganDaun;
     }
-
+    
     public String getJenisBatang() {
         return jenisBatang;
     }
@@ -80,6 +82,4 @@ public class Matahari {
     public String getAsal() {
         return asal;
     }
-     
-    
 }

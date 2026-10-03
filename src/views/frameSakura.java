@@ -2,24 +2,25 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package bunga;
+package views;
 
 import com.formdev.flatlaf.FlatLightLaf;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+import models.Sakura;
 
 /**
  *
- * @author ASUS
+ * @author user
  */
-public class frameKamboja extends javax.swing.JFrame {
+public class frameSakura extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frameKamboja.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frameSakura.class.getName());
 
     /**
-     * Creates new form frameKamboja
+     * Creates new form frameSakura
      */
-    public frameKamboja() {
+    public frameSakura() {
         initComponents();
         
         reset();
@@ -38,9 +39,8 @@ public class frameKamboja extends javax.swing.JFrame {
         lAsal.setText(null);
     }
     
-    
     void simpan(){
-        Kamboja bunga = new Kamboja();
+        Sakura bunga = new Sakura();
 
         bunga.setNama(tNama.getText());
         bunga.setWarna(cWarna.getSelectedItem().toString());
@@ -120,24 +120,23 @@ public class frameKamboja extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setMaximumSize(new java.awt.Dimension(660, 877));
         jPanel2.setMinimumSize(new java.awt.Dimension(660, 877));
-        jPanel2.setPreferredSize(new java.awt.Dimension(660, 877));
 
         jLabel1.setFont(new java.awt.Font("Poppins SemiBold", 0, 32)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/icon kamboja.png"))); // NOI18N
-        jLabel1.setText("Kamboja");
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/icon sakura.png"))); // NOI18N
+        jLabel1.setText("Sakura");
         jLabel1.setIconTextGap(12);
 
         bSimpan.setBackground(new java.awt.Color(0, 153, 102));
         bSimpan.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
         bSimpan.setForeground(new java.awt.Color(255, 255, 255));
-        bSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/save.png"))); // NOI18N
+        bSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/save.png"))); // NOI18N
         bSimpan.setText("Simpan");
         bSimpan.addActionListener(this::bSimpanActionPerformed);
 
         bReset.setBackground(new java.awt.Color(224, 231, 239));
         bReset.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
-        bReset.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/reset.png"))); // NOI18N
+        bReset.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/reset.png"))); // NOI18N
         bReset.setText("Reset");
         bReset.addActionListener(this::bResetActionPerformed);
 
@@ -313,30 +312,18 @@ public class frameKamboja extends javax.swing.JFrame {
         jPanel5.add(tNama);
 
         cWarna.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
-        cWarna.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Putih", "Kuning", "Merah Muda", "Merah Tua" }));
-        cWarna.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                cWarnaKeyReleased(evt);
-            }
-        });
+        cWarna.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Putih", "Merah Muda", "Merah Muda Tua" }));
+        cWarna.addActionListener(this::cWarnaActionPerformed);
         jPanel5.add(cWarna);
 
         cDaun.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         cDaun.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Menyirip", "Sejajar", "Menjari" }));
-        cDaun.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                cDaunKeyReleased(evt);
-            }
-        });
+        cDaun.addActionListener(this::cDaunActionPerformed);
         jPanel5.add(cDaun);
 
         cBatang.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
-        cBatang.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Batang Keras (Berkayu)", "Batang Lunak" }));
-        cBatang.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                cBatangKeyReleased(evt);
-            }
-        });
+        cBatang.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Batang Berkayu", "Bercabang" }));
+        cBatang.addActionListener(this::cBatangActionPerformed);
         jPanel5.add(cBatang);
 
         tAroma.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
@@ -355,7 +342,7 @@ public class frameKamboja extends javax.swing.JFrame {
         });
         jPanel5.add(tAsal);
 
-        lblBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/arrow left.png"))); // NOI18N
+        lblBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/arrow left.png"))); // NOI18N
         lblBack.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblBackMouseClicked(evt);
@@ -369,35 +356,35 @@ public class frameKamboja extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(lblBack)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 481, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(149, 149, 149)
+                        .addComponent(bSimpan, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(70, 70, 70)
+                        .addComponent(bReset, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(19, 19, 19)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(lblBack)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(170, 170, 170))
                             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 451, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(149, 149, 149)
-                        .addComponent(bSimpan, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(70, 70, 70)
-                        .addComponent(bReset, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(15, Short.MAX_VALUE))
+                                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 451, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(22, 22, 22)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel1)
                     .addComponent(lblBack, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -408,10 +395,10 @@ public class frameKamboja extends javax.swing.JFrame {
                     .addComponent(bReset, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel2, java.awt.BorderLayout.CENTER);
+        getContentPane().add(jPanel2, java.awt.BorderLayout.PAGE_START);
 
         pack();
         setLocationRelativeTo(null);
@@ -437,21 +424,6 @@ public class frameKamboja extends javax.swing.JFrame {
         simpan();
     }//GEN-LAST:event_tAromaKeyReleased
 
-    private void cWarnaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cWarnaKeyReleased
-        // TODO add your handling code here:
-        simpan();
-    }//GEN-LAST:event_cWarnaKeyReleased
-
-    private void cDaunKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cDaunKeyReleased
-        // TODO add your handling code here:
-        simpan();
-    }//GEN-LAST:event_cDaunKeyReleased
-
-    private void cBatangKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cBatangKeyReleased
-        // TODO add your handling code here:
-        simpan();
-    }//GEN-LAST:event_cBatangKeyReleased
-
     private void tAsalKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tAsalKeyReleased
         // TODO add your handling code here:
         simpan();
@@ -460,9 +432,24 @@ public class frameKamboja extends javax.swing.JFrame {
     private void lblBackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBackMouseClicked
         // TODO add your handling code here:
         new mainFrame().setVisible(true);
-        
+
         dispose();
     }//GEN-LAST:event_lblBackMouseClicked
+
+    private void cWarnaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cWarnaActionPerformed
+        // TODO add your handling code here:
+        simpan();
+    }//GEN-LAST:event_cWarnaActionPerformed
+
+    private void cDaunActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cDaunActionPerformed
+        // TODO add your handling code here:
+        simpan();
+    }//GEN-LAST:event_cDaunActionPerformed
+
+    private void cBatangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cBatangActionPerformed
+        // TODO add your handling code here:
+        simpan();
+    }//GEN-LAST:event_cBatangActionPerformed
 
     /**
      * @param args the command line arguments
@@ -473,7 +460,7 @@ public class frameKamboja extends javax.swing.JFrame {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
-        try {
+         try {
             UIManager.put("Button.arc", 25);
             UIManager.put("Button.borderwidht", 0);
             UIManager.put("TextComponent.arc", 10);
@@ -486,7 +473,7 @@ public class frameKamboja extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new frameKamboja().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new frameSakura().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

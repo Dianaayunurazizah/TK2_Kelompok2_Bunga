@@ -2,30 +2,31 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package bunga;
+package models;
 
 /**
  *
- * @author Admin
+ * @author ASUS
  */
-public class Anggrek {
-    String nama; 
+public class Kamboja {
+    
+    String nama;
     String warna;
     String pertulanganDaun;
     String jenisBatang;
     String aroma;
     String asal;
     
-    public Anggrek(){
-        nama = "";
-        warna = "";
-        pertulanganDaun = "";
-        jenisBatang = "";
-        aroma = "";
-        asal = "";
+    public Kamboja(){
+        this.nama = "";
+        this.warna = "";
+        this.pertulanganDaun = "";
+        this.jenisBatang = "";
+        this.aroma = "";
+        this.asal = "";
     }
 
-    public Anggrek(String nama, String warna, String pertulanganDaun, String jenisBatang, String aroma, String asal) {
+    public Kamboja(String nama, String warna, String pertulanganDaun, String jenisBatang, String aroma, String asal) {
         this.nama = nama;
         this.warna = warna;
         this.pertulanganDaun = pertulanganDaun;
@@ -81,7 +82,6 @@ public class Anggrek {
     public String getAsal() {
         return asal;
     }
-     
     
     
 }

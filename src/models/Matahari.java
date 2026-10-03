@@ -2,22 +2,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package bunga;
+package models;
 
 /**
  *
- * @author user
+ * @author ThinkPad
  */
-public class Sakura {
-
+public class Matahari {
     String nama;
     String warna;
     String pertulanganDaun;
     String jenisBatang;
     String aroma;
     String asal;
-    
-    public Sakura(){
+
+    public Matahari(){
         nama = "";
         warna = "";
         pertulanganDaun = "";
@@ -25,8 +24,7 @@ public class Sakura {
         aroma = "";
         asal = "";
     }
-
-    public Sakura(String nama, String warna, String pertulanganDaun, String jenisBatang, String aroma, String asal) {
+    public Matahari(String nama, String warna, String pertulanganDaun, String jenisBatang, String aroma, String asal) {
         this.nama = nama;
         this.warna = warna;
         this.pertulanganDaun = pertulanganDaun;
@@ -82,5 +80,6 @@ public class Sakura {
     public String getAsal() {
         return asal;
     }
-
+     
+    
 }
