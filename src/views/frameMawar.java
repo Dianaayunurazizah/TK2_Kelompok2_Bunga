@@ -135,13 +135,13 @@ public class frameMawar extends javax.swing.JFrame {
         bSimpan.setBackground(new java.awt.Color(0, 153, 102));
         bSimpan.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
         bSimpan.setForeground(new java.awt.Color(255, 255, 255));
-        bSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/save.png"))); // NOI18N
+        bSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/save.png"))); // NOI18N
         bSimpan.setText("Simpan");
         bSimpan.addActionListener(this::bSimpanActionPerformed);
 
         bReset.setBackground(new java.awt.Color(224, 231, 239));
         bReset.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
-        bReset.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/reset.png"))); // NOI18N
+        bReset.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/reset.png"))); // NOI18N
         bReset.setText("Reset");
         bReset.addActionListener(this::bResetActionPerformed);
 
@@ -368,14 +368,13 @@ public class frameMawar extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(202, 202, 202))
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(jPanel2Layout.createSequentialGroup()
-                                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 451, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 451, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(149, 149, 149)
                         .addComponent(bSimpan, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)

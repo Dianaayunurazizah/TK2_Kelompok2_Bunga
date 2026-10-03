@@ -130,13 +130,13 @@ public class frameMelati extends javax.swing.JFrame {
         bSimpan.setBackground(new java.awt.Color(0, 153, 102));
         bSimpan.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
         bSimpan.setForeground(new java.awt.Color(255, 255, 255));
-        bSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/save.png"))); // NOI18N
+        bSimpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/save.png"))); // NOI18N
         bSimpan.setText("Simpan");
         bSimpan.addActionListener(this::bSimpanActionPerformed);
 
         bReset.setBackground(new java.awt.Color(224, 231, 239));
         bReset.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
-        bReset.setIcon(new javax.swing.ImageIcon(getClass().getResource("/models/icon/reset.png"))); // NOI18N
+        bReset.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bunga/icon/reset.png"))); // NOI18N
         bReset.setText("Reset");
         bReset.addActionListener(this::bResetActionPerformed);
 
