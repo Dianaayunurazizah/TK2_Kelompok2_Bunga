@@ -8,6 +8,7 @@ import com.formdev.flatlaf.FlatLightLaf;
 import com.formdev.flatlaf.ui.FlatLineBorder;
 import java.awt.Color;
 import java.awt.Insets;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
@@ -265,6 +266,10 @@ public class frameLogin extends javax.swing.JFrame {
         User usr = new User();
         usr.setUsername(tUser.getText());
         usr.setPassword(tPassword.getText());
+        
+        JOptionPane.showMessageDialog(this, "Selamat Datang " + usr.getUsername() + " !",
+                "Login Berhasil",
+                JOptionPane.INFORMATION_MESSAGE);
 
         new mainFrame().setVisible(true);
         dispose();
