@@ -106,6 +106,7 @@ public class frameLogin extends javax.swing.JFrame {
         tUser.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         tUser.setForeground(new java.awt.Color(150, 150, 150));
         tUser.setBorder(null);
+        tUser.addActionListener(this::tUserActionPerformed);
 
         javax.swing.GroupLayout pUsernameLayout = new javax.swing.GroupLayout(pUsername);
         pUsername.setLayout(pUsernameLayout);
@@ -145,6 +146,7 @@ public class frameLogin extends javax.swing.JFrame {
         tPassword.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         tPassword.setForeground(new java.awt.Color(150, 150, 150));
         tPassword.setBorder(null);
+        tPassword.addActionListener(this::tPasswordActionPerformed);
 
         javax.swing.GroupLayout pPasswordLayout = new javax.swing.GroupLayout(pPassword);
         pPassword.setLayout(pPasswordLayout);
@@ -283,6 +285,16 @@ public class frameLogin extends javax.swing.JFrame {
             tPassword.setEchoChar('\u2022');
         }
     }//GEN-LAST:event_bMataActionPerformed
+
+    private void tUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tUserActionPerformed
+        // TODO add your handling code here:
+        tPassword.requestFocus();
+    }//GEN-LAST:event_tUserActionPerformed
+
+    private void tPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tPasswordActionPerformed
+        // TODO add your handling code here:
+        bLogin.doClick();
+    }//GEN-LAST:event_tPasswordActionPerformed
 
     /**
      * @param args the command line arguments
