@@ -9,12 +9,12 @@ package models;
  * @author Admin
  */
 public class Anggrek {
-    String nama; 
-    String warna;
-    String pertulanganDaun;
-    String jenisBatang;
-    String aroma;
-    String asal;
+    private String nama; 
+    private String warna;
+    private String pertulanganDaun;
+    private String jenisBatang;
+    private String aroma;
+    private String asal;
     
     public Anggrek(){
         nama = "";
