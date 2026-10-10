@@ -1,0 +1,128 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package models;
+
+/**
+ *
+ * @author Acer
+ */
+public class Bunga1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        Kamboja bunga1 = new Kamboja("Lily", "Putih", "Sejajar", "Batang Semu", "Lembut nyaris tidak beraroma", "Afrika Selatan");
+        
+        bunga1.setNama("Kamboja");
+        bunga1.setWarna("Putih dan Kuning");
+        bunga1.setPertulanganDaun("Menyirip");
+        bunga1.setJenisBatang("Batang Lunak");
+        bunga1.setAroma("Wangi");
+        bunga1.setAsal("Amerika Tengah, Meksiko, Venezuela, dan Kepulauan Karibia");
+        
+        System.out.println("Nama\t\t\t:" + bunga1.getNama());
+        System.out.println("Warna\t\t\t:" + bunga1.getWarna());
+        System.out.println("Pertulangan Daun\t:" + bunga1.getPertulanganDaun());
+        System.out.println("Jenis Batang\t\t:" + bunga1.getJenisBatang());
+        System.out.println("Aroma\t\t\t:" + bunga1.getAroma());
+        System.out.println("Asal\t\t\t:" + bunga1.getAsal());
+        
+        System.out.println("");
+        
+        Melati bunga2 = new Melati("Lily", "Putih", "Sejajar", "Batang Semu", "Lembut nyaris tidak beraroma", "Afrika Selatan");
+        
+        bunga2.setNama("Melati");
+        bunga2.setWarna("Putih");
+        bunga2.setPertulanganDaun("Menyirip");
+        bunga2.setJenisBatang("Batang Berkayu");
+        bunga2.setAroma("Wangi");
+        bunga2.setAsal("Asia Selatan, Asia Tenggara, dan Indonesia");
+        
+        System.out.println("Nama\t\t\t:" + bunga2.getNama());
+        System.out.println("Warna\t\t\t:" + bunga2.getWarna());
+        System.out.println("Pertulangan Daun\t:" + bunga2.getPertulanganDaun());
+        System.out.println("Jenis Batang\t\t:" + bunga2.getJenisBatang());
+        System.out.println("Aroma\t\t\t:" + bunga2.getAroma());
+        System.out.println("Asal\t\t\t:" + bunga2.getAsal());
+        
+        System.out.println("");
+        
+        Mawar bunga3 = new Mawar("Lily", "Putih", "Sejajar", "Batang Semu", "Lembut nyaris tidak beraroma", "Afrika Selatan");
+        
+        bunga3.setNama("Mawar");
+        bunga3.setWarna("Merah");
+        bunga3.setPertulanganDaun("Menyirip");
+        bunga3.setJenisBatang("Batang Berkayu dan Berduri");
+        bunga3.setAroma("Wangi");
+        bunga3.setAsal("Benua Asia dari dataran Cina, Timur Tengah dan Eropa Timur");
+        
+        System.out.println("Nama\t\t\t:" + bunga3.getNama());
+        System.out.println("Warna\t\t\t:" + bunga3.getWarna());
+        System.out.println("Pertulangan Daun\t:" + bunga3.getPertulanganDaun());
+        System.out.println("Jenis Batang\t\t:" + bunga3.getJenisBatang());
+        System.out.println("Aroma\t\t\t:" + bunga3.getAroma());
+        System.out.println("Asal\t\t\t:" + bunga3.getAsal());
+        
+        System.out.println("");
+       
+        Matahari bunga4 = new Matahari("Lily", "Putih", "Sejajar", "Batang Semu", "Lembut nyaris tidak beraroma", "Afrika Selatan");
+        
+        bunga4.setNama("Matahari");
+        bunga4.setWarna("Kuning");
+        bunga4.setPertulanganDaun("Menyirip");
+        bunga4.setJenisBatang("Tegak dan Kokoh");
+        bunga4.setAroma("Khas dan lembut");
+        bunga4.setAsal("Amerika utara");
+        
+        System.out.println("Nama\t\t\t:" + bunga4.getNama());
+        System.out.println("Warna\t\t\t:" + bunga4.getWarna());
+        System.out.println("Pertulangan Daun\t:" + bunga4.getPertulanganDaun());
+        System.out.println("Jenis Batang\t\t:" + bunga4.getJenisBatang());
+        System.out.println("Aroma\t\t\t:" + bunga4.getAroma());
+        System.out.println("Asal\t\t\t:" + bunga4.getAsal());
+        
+        System.out.println("");
+        
+        Sakura bunga5 = new Sakura("Lily", "Putih", "Sejajar", "Batang Semu", "Lembut nyaris tidak beraroma", "Afrika Selatan");
+        
+        bunga5.setNama("Sakura");
+        bunga5.setWarna("Merah muda");
+        bunga5.setPertulanganDaun("Menyirip");
+        bunga5.setJenisBatang("Berkayu dan Bercabang");
+        bunga5.setAroma("Ringan dan lembut");
+        bunga5.setAsal("Jepang");
+        
+        System.out.println("Nama\t\t\t:" + bunga5.getNama());
+        System.out.println("Warna\t\t\t:" + bunga5.getWarna());
+        System.out.println("Pertulangan Daun\t:" + bunga5.getPertulanganDaun());
+        System.out.println("Jenis Batang\t\t:" + bunga5.getJenisBatang());
+        System.out.println("Aroma\t\t\t:" + bunga5.getAroma());
+        System.out.println("Asal\t\t\t:" + bunga5.getAsal());
+        
+        System.out.println("");
+        
+        Anggrek bunga6 = new Anggrek();
+        
+        bunga6.setNama("Anggrek");
+        bunga6.setWarna("Merah muda");
+        bunga6.setPertulanganDaun("Sejajar");
+        bunga6.setJenisBatang("Monopodial atau Simpodial");
+        bunga6.setAroma("Manis dan Segar");
+        bunga6.setPohonInang("Mangga");
+        bunga6.setAsal("Indonesia");
+        
+        System.out.println("Nama\t\t\t:" + bunga6.getNama());
+        System.out.println("Warna\t\t\t:" + bunga6.getWarna());
+        System.out.println("Pertulangan Daun\t:" + bunga6.getPertulanganDaun());
+        System.out.println("Jenis Batang\t\t:" + bunga6.getJenisBatang());
+        System.out.println("Aroma\t\t\t:" + bunga6.getAroma());
+        System.out.println("Pohon Inang\t\t:" + bunga6.getPohonInang());
+        System.out.println("Asal\t\t\t:" + bunga6.getAsal());
+    }
+    
+}
