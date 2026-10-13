@@ -54,7 +54,7 @@ public class Bunga1 {
         
         System.out.println("");
         
-        Mawar bunga3 = new Mawar("Lily", "Putih", "Sejajar", "Batang Semu", "Lembut nyaris tidak beraroma", "Afrika Selatan");
+        Mawar bunga3 = new Mawar();
         
         bunga3.setNama("Mawar");
         bunga3.setWarna("Merah");
@@ -62,6 +62,7 @@ public class Bunga1 {
         bunga3.setJenisBatang("Batang Berkayu dan Berduri");
         bunga3.setAroma("Wangi");
         bunga3.setAsal("Benua Asia dari dataran Cina, Timur Tengah dan Eropa Timur");
+        bunga3.setJumlahDuri("10");
         
         System.out.println("Nama\t\t\t:" + bunga3.getNama());
         System.out.println("Warna\t\t\t:" + bunga3.getWarna());
@@ -69,6 +70,7 @@ public class Bunga1 {
         System.out.println("Jenis Batang\t\t:" + bunga3.getJenisBatang());
         System.out.println("Aroma\t\t\t:" + bunga3.getAroma());
         System.out.println("Asal\t\t\t:" + bunga3.getAsal());
+        System.out.println("Jumlah Duri\t\t:" + bunga3.getJumlahDuri());
         
         System.out.println("");
        
