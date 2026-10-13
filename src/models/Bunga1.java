@@ -16,7 +16,7 @@ public class Bunga1 {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Kamboja bunga1 = new Kamboja("Lily", "Putih", "Sejajar", "Batang Semu", "Lembut nyaris tidak beraroma", "Afrika Selatan");
+        Kamboja bunga1 = new Kamboja();
         
         bunga1.setNama("Kamboja");
         bunga1.setWarna("Putih dan Kuning");

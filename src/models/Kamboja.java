@@ -8,80 +8,24 @@ package models;
  *
  * @author ASUS
  */
-public class Kamboja {
+public class Kamboja extends Bunga{
     
-    private String nama;
-    private String warna;
-    private String pertulanganDaun;
-    private String jenisBatang;
-    private String aroma;
-    private String asal;
+    private String ciriGetah;
     
     public Kamboja(){
-        nama = "";
-        warna = "";
-        pertulanganDaun = "";
-        jenisBatang = "";
-        aroma = "";
-        asal = "";
+        ciriGetah = "";
     }
 
-    public Kamboja(String nama, String warna, String pertulanganDaun, String jenisBatang, String aroma, String asal) {
-        this.nama = nama;
-        this.warna = warna;
-        this.pertulanganDaun = pertulanganDaun;
-        this.jenisBatang = jenisBatang;
-        this.aroma = aroma;
-        this.asal = asal;
+    public Kamboja(String ciriGetah) {
+        this.ciriGetah = ciriGetah;
     }
 
-    public void setNama(String nama) {
-        this.nama = nama;
+    public String getCiriGetah() {
+        return ciriGetah;
     }
 
-    public void setWarna(String warna) {
-        this.warna = warna;
+    public void setCiriGetah(String ciriGetah) {
+        this.ciriGetah = ciriGetah;
     }
 
-    public void setPertulanganDaun(String pertulanganDaun) {
-        this.pertulanganDaun = pertulanganDaun;
-    }
-
-    public void setJenisBatang(String jenisBatang) {
-        this.jenisBatang = jenisBatang;
-    }
-
-    public void setAroma(String aroma) {
-        this.aroma = aroma;
-    }
-
-    public void setAsal(String asal) {
-        this.asal = asal;
-    }
-
-    public String getNama() {
-        return nama;
-    }
-
-    public String getWarna() {
-        return warna;
-    }
-
-    public String getPertulanganDaun() {
-        return pertulanganDaun;
-    }
-
-    public String getJenisBatang() {
-        return jenisBatang;
-    }
-
-    public String getAroma() {
-        return aroma;
-    }
-
-    public String getAsal() {
-        return asal;
-    }
-    
-    
 }
