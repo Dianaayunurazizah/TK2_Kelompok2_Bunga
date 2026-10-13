@@ -9,7 +9,7 @@ package models;
  * @author Acer
  */
 public class Bunga {
-    String nama, warna, pertulanganDaun, jenisBatang, aroma, asal;
+    private String nama, warna, pertulanganDaun, jenisBatang, aroma, asal;
     
     public Bunga(){
         nama = "";
