@@ -34,7 +34,7 @@ public class Bunga1 {
         
         System.out.println("");
         
-        Melati bunga2 = new Melati("Lily", "Putih", "Sejajar", "Batang Semu", "Lembut nyaris tidak beraroma", "Afrika Selatan");
+        Melati bunga2 = new Melati();
         
         bunga2.setNama("Melati");
         bunga2.setWarna("Putih");
@@ -42,6 +42,7 @@ public class Bunga1 {
         bunga2.setJenisBatang("Batang Berkayu");
         bunga2.setAroma("Wangi");
         bunga2.setAsal("Asia Selatan, Asia Tenggara, dan Indonesia");
+        bunga2.setLamaWangi("Asia Selatan, Asia Tenggara, dan Indonesia");
         
         System.out.println("Nama\t\t\t:" + bunga2.getNama());
         System.out.println("Warna\t\t\t:" + bunga2.getWarna());
@@ -49,6 +50,7 @@ public class Bunga1 {
         System.out.println("Jenis Batang\t\t:" + bunga2.getJenisBatang());
         System.out.println("Aroma\t\t\t:" + bunga2.getAroma());
         System.out.println("Asal\t\t\t:" + bunga2.getAsal());
+        System.out.println("Lama Wangi\t\t:" + bunga2.getLamaWangi());
         
         System.out.println("");
         
