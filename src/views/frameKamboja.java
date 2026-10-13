@@ -43,6 +43,7 @@ public class frameKamboja extends javax.swing.JFrame {
         lBatang.setText(null);
         lAroma.setText(null);
         lAsal.setText(null);
+        lGetah.setText(null);
     }
     
     
@@ -55,6 +56,7 @@ public class frameKamboja extends javax.swing.JFrame {
         bunga.setJenisBatang(cBatang.getSelectedItem().toString());
         bunga.setAroma(tAroma.getText());
         bunga.setAsal(tAsal.getText());
+        bunga.setCiriGetah(tGetah.getText());
 
         lNama.setText(bunga.getNama());
         lWarna.setText(bunga.getWarna());
@@ -62,6 +64,7 @@ public class frameKamboja extends javax.swing.JFrame {
         lBatang.setText(bunga.getJenisBatang());
         lAroma.setText(bunga.getAroma());
         lAsal.setText(bunga.getAsal());
+        lGetah.setText(bunga.getCiriGetah());
     }
 
     /**
@@ -85,6 +88,7 @@ public class frameKamboja extends javax.swing.JFrame {
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
@@ -92,6 +96,7 @@ public class frameKamboja extends javax.swing.JFrame {
         jLabel29 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         lNama = new javax.swing.JLabel();
         lWarna = new javax.swing.JLabel();
@@ -99,6 +104,7 @@ public class frameKamboja extends javax.swing.JFrame {
         lBatang = new javax.swing.JLabel();
         lAroma = new javax.swing.JLabel();
         lAsal = new javax.swing.JLabel();
+        lGetah = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -106,6 +112,7 @@ public class frameKamboja extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
@@ -113,6 +120,7 @@ public class frameKamboja extends javax.swing.JFrame {
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         tNama = new javax.swing.JTextField();
         cWarna = new javax.swing.JComboBox<>();
@@ -120,15 +128,16 @@ public class frameKamboja extends javax.swing.JFrame {
         cBatang = new javax.swing.JComboBox<>();
         tAroma = new javax.swing.JTextField();
         tAsal = new javax.swing.JTextField();
+        tGetah = new javax.swing.JTextField();
         lblBack = new javax.swing.JLabel();
         tUser = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel2.setMaximumSize(new java.awt.Dimension(660, 877));
-        jPanel2.setMinimumSize(new java.awt.Dimension(660, 877));
-        jPanel2.setPreferredSize(new java.awt.Dimension(660, 891));
+        jPanel2.setMaximumSize(new java.awt.Dimension(660, 975));
+        jPanel2.setMinimumSize(new java.awt.Dimension(660, 975));
+        jPanel2.setPreferredSize(new java.awt.Dimension(660, 975));
 
         jLabel1.setFont(new java.awt.Font("Poppins SemiBold", 0, 32)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -153,7 +162,7 @@ public class frameKamboja extends javax.swing.JFrame {
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Output", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Poppins Medium", 0, 16))); // NOI18N
 
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel6.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
+        jPanel6.setLayout(new java.awt.GridLayout(7, 1, 0, 15));
 
         jLabel20.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         jLabel20.setText("Nama Bunga         ");
@@ -179,8 +188,12 @@ public class frameKamboja extends javax.swing.JFrame {
         jLabel25.setText("Asal                    ");
         jPanel6.add(jLabel25);
 
+        jLabel33.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
+        jLabel33.setText("Ciri Getah");
+        jPanel6.add(jLabel33);
+
         jPanel7.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel7.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
+        jPanel7.setLayout(new java.awt.GridLayout(7, 1, 0, 15));
 
         jLabel26.setFont(new java.awt.Font("Poppins SemiBold", 0, 16)); // NOI18N
         jLabel26.setText(":");
@@ -206,8 +219,12 @@ public class frameKamboja extends javax.swing.JFrame {
         jLabel31.setText(":");
         jPanel7.add(jLabel31);
 
+        jLabel34.setFont(new java.awt.Font("Poppins SemiBold", 0, 16)); // NOI18N
+        jLabel34.setText(":");
+        jPanel7.add(jLabel34);
+
         jPanel8.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel8.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
+        jPanel8.setLayout(new java.awt.GridLayout(7, 1, 0, 15));
 
         lNama.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         lNama.setText("jLabel14");
@@ -233,6 +250,10 @@ public class frameKamboja extends javax.swing.JFrame {
         lAsal.setText("jLabel14");
         jPanel8.add(lAsal);
 
+        lGetah.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
+        lGetah.setText("jLabel14");
+        jPanel8.add(lGetah);
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -240,23 +261,25 @@ public class frameKamboja extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 5, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(7, 7, 7)
+                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 4, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 414, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, 306, Short.MAX_VALUE))
-            .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, 323, Short.MAX_VALUE)
+                    .addComponent(jPanel8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
+        jPanel1.setLayout(new java.awt.GridLayout(7, 1, 0, 15));
 
         jLabel2.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         jLabel2.setText("Nama Bunga         ");
@@ -282,8 +305,12 @@ public class frameKamboja extends javax.swing.JFrame {
         jLabel7.setText("Asal                    ");
         jPanel1.add(jLabel7);
 
+        jLabel8.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
+        jLabel8.setText("Ciri Getah");
+        jPanel1.add(jLabel8);
+
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel4.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
+        jPanel4.setLayout(new java.awt.GridLayout(7, 1, 0, 15));
 
         jLabel14.setFont(new java.awt.Font("Poppins SemiBold", 0, 16)); // NOI18N
         jLabel14.setText(":");
@@ -309,8 +336,12 @@ public class frameKamboja extends javax.swing.JFrame {
         jLabel19.setText(":");
         jPanel4.add(jLabel19);
 
+        jLabel32.setFont(new java.awt.Font("Poppins SemiBold", 0, 16)); // NOI18N
+        jLabel32.setText(":");
+        jPanel4.add(jLabel32);
+
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel5.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
+        jPanel5.setLayout(new java.awt.GridLayout(7, 1, 0, 15));
 
         tNama.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         tNama.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -322,29 +353,17 @@ public class frameKamboja extends javax.swing.JFrame {
 
         cWarna.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         cWarna.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Putih", "Kuning", "Merah Muda", "Merah Tua" }));
-        cWarna.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                cWarnaKeyReleased(evt);
-            }
-        });
+        cWarna.addActionListener(this::cWarnaActionPerformed);
         jPanel5.add(cWarna);
 
         cDaun.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         cDaun.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Menyirip", "Sejajar", "Menjari" }));
-        cDaun.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                cDaunKeyReleased(evt);
-            }
-        });
+        cDaun.addActionListener(this::cDaunActionPerformed);
         jPanel5.add(cDaun);
 
         cBatang.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         cBatang.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Batang Keras (Berkayu)", "Batang Lunak" }));
-        cBatang.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                cBatangKeyReleased(evt);
-            }
-        });
+        cBatang.addActionListener(this::cBatangActionPerformed);
         jPanel5.add(cBatang);
 
         tAroma.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
@@ -362,6 +381,14 @@ public class frameKamboja extends javax.swing.JFrame {
             }
         });
         jPanel5.add(tAsal);
+
+        tGetah.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
+        tGetah.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                tGetahKeyReleased(evt);
+            }
+        });
+        jPanel5.add(tGetah);
 
         lblBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/arrow left.png"))); // NOI18N
         lblBack.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -394,7 +421,7 @@ public class frameKamboja extends javax.swing.JFrame {
                                     .addGroup(jPanel2Layout.createSequentialGroup()
                                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 4, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 451, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addGroup(jPanel2Layout.createSequentialGroup()
@@ -416,19 +443,20 @@ public class frameKamboja extends javax.swing.JFrame {
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(lblBack, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(6, 6, 6)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 350, Short.MAX_VALUE))
-                .addGap(20, 20, 20)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 409, Short.MAX_VALUE)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 409, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(bSimpan, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(bReset, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(tUser, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel2, java.awt.BorderLayout.CENTER);
@@ -457,21 +485,6 @@ public class frameKamboja extends javax.swing.JFrame {
         simpan();
     }//GEN-LAST:event_tAromaKeyReleased
 
-    private void cWarnaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cWarnaKeyReleased
-        // TODO add your handling code here:
-        simpan();
-    }//GEN-LAST:event_cWarnaKeyReleased
-
-    private void cDaunKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cDaunKeyReleased
-        // TODO add your handling code here:
-        simpan();
-    }//GEN-LAST:event_cDaunKeyReleased
-
-    private void cBatangKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cBatangKeyReleased
-        // TODO add your handling code here:
-        simpan();
-    }//GEN-LAST:event_cBatangKeyReleased
-
     private void tAsalKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tAsalKeyReleased
         // TODO add your handling code here:
         simpan();
@@ -483,6 +496,26 @@ public class frameKamboja extends javax.swing.JFrame {
         
         dispose();
     }//GEN-LAST:event_lblBackMouseClicked
+
+    private void cWarnaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cWarnaActionPerformed
+        // TODO add your handling code here:
+        simpan();
+    }//GEN-LAST:event_cWarnaActionPerformed
+
+    private void cDaunActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cDaunActionPerformed
+        // TODO add your handling code here:
+        simpan();
+    }//GEN-LAST:event_cDaunActionPerformed
+
+    private void cBatangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cBatangActionPerformed
+        // TODO add your handling code here:
+        simpan();
+    }//GEN-LAST:event_cBatangActionPerformed
+
+    private void tGetahKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tGetahKeyReleased
+        // TODO add your handling code here:
+        simpan();
+    }//GEN-LAST:event_tGetahKeyReleased
 
     /**
      * @param args the command line arguments
@@ -536,10 +569,14 @@ public class frameKamboja extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -552,11 +589,13 @@ public class frameKamboja extends javax.swing.JFrame {
     private javax.swing.JLabel lAsal;
     private javax.swing.JLabel lBatang;
     private javax.swing.JLabel lDaun;
+    private javax.swing.JLabel lGetah;
     private javax.swing.JLabel lNama;
     private javax.swing.JLabel lWarna;
     private javax.swing.JLabel lblBack;
     private javax.swing.JTextField tAroma;
     private javax.swing.JTextField tAsal;
+    private javax.swing.JTextField tGetah;
     private javax.swing.JTextField tNama;
     private javax.swing.JLabel tUser;
     // End of variables declaration//GEN-END:variables

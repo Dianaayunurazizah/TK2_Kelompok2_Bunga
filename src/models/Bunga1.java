@@ -24,6 +24,7 @@ public class Bunga1 {
         bunga1.setJenisBatang("Batang Lunak");
         bunga1.setAroma("Wangi");
         bunga1.setAsal("Amerika Tengah, Meksiko, Venezuela, dan Kepulauan Karibia");
+        bunga1.setCiriGetah("Beracun");
         
         System.out.println("Nama\t\t\t:" + bunga1.getNama());
         System.out.println("Warna\t\t\t:" + bunga1.getWarna());
@@ -31,6 +32,7 @@ public class Bunga1 {
         System.out.println("Jenis Batang\t\t:" + bunga1.getJenisBatang());
         System.out.println("Aroma\t\t\t:" + bunga1.getAroma());
         System.out.println("Asal\t\t\t:" + bunga1.getAsal());
+        System.out.println("Ciri Getah\t\t:" + bunga1.getCiriGetah());
         
         System.out.println("");
         
