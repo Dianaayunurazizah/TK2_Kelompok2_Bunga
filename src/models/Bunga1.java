@@ -119,16 +119,16 @@ public class Bunga1 {
         bunga6.setPertulanganDaun("Sejajar");
         bunga6.setJenisBatang("Monopodial atau Simpodial");
         bunga6.setAroma("Manis dan Segar");
-        bunga6.setPohonInang("Mangga");
         bunga6.setAsal("Indonesia");
+        bunga6.setPohonInang("Mangga");
         
         System.out.println("Nama\t\t\t:" + bunga6.getNama());
         System.out.println("Warna\t\t\t:" + bunga6.getWarna());
         System.out.println("Pertulangan Daun\t:" + bunga6.getPertulanganDaun());
         System.out.println("Jenis Batang\t\t:" + bunga6.getJenisBatang());
         System.out.println("Aroma\t\t\t:" + bunga6.getAroma());
-        System.out.println("Pohon Inang\t\t:" + bunga6.getPohonInang());
         System.out.println("Asal\t\t\t:" + bunga6.getAsal());
+        System.out.println("Pohon Inang\t\t:" + bunga6.getPohonInang());
     }
     
 }

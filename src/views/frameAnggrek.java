@@ -36,12 +36,14 @@ public class frameAnggrek extends javax.swing.JFrame {
         tNama.setText(null);
         tAroma.setText(null);
         tAsal.setText(null);
+        tInang.setText(null);
         lNama.setText(null);
         lWarna.setText(null);
         lDaun.setText(null);
         lBatang.setText(null);
         lAroma.setText(null);
         lAsal.setText(null);
+        lInang.setText(null);
     }
     
      void simpan(){
@@ -53,6 +55,7 @@ public class frameAnggrek extends javax.swing.JFrame {
         bunga.setJenisBatang(cBatang.getSelectedItem().toString());
         bunga.setAroma(tAroma.getText());
         bunga.setAsal(tAsal.getText());
+        bunga.setPohonInang(tInang.getText());
 
         lNama.setText(bunga.getNama());
         lWarna.setText(bunga.getWarna());
@@ -60,6 +63,7 @@ public class frameAnggrek extends javax.swing.JFrame {
         lBatang.setText(bunga.getJenisBatang());
         lAroma.setText(bunga.getAroma());
         lAsal.setText(bunga.getAsal());
+        lInang.setText(bunga.getAsal());
     }
 
     /**
@@ -84,6 +88,7 @@ public class frameAnggrek extends javax.swing.JFrame {
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
+        jlabel36 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
@@ -91,6 +96,7 @@ public class frameAnggrek extends javax.swing.JFrame {
         jLabel29 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         lNama = new javax.swing.JLabel();
         lWarna = new javax.swing.JLabel();
@@ -98,15 +104,18 @@ public class frameAnggrek extends javax.swing.JFrame {
         lBatang = new javax.swing.JLabel();
         lAroma = new javax.swing.JLabel();
         lAsal = new javax.swing.JLabel();
+        lInang = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jlabel = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
@@ -119,6 +128,7 @@ public class frameAnggrek extends javax.swing.JFrame {
         cBatang = new javax.swing.JComboBox<>();
         tAroma = new javax.swing.JTextField();
         tAsal = new javax.swing.JTextField();
+        tInang = new javax.swing.JTextField();
         lblBack = new javax.swing.JLabel();
         tUser = new javax.swing.JLabel();
 
@@ -154,7 +164,7 @@ public class frameAnggrek extends javax.swing.JFrame {
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Output", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Poppins Medium", 0, 16))); // NOI18N
 
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel6.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
+        jPanel6.setLayout(new java.awt.GridLayout(7, 1, 0, 15));
 
         jLabel20.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         jLabel20.setText("Nama Bunga         ");
@@ -180,8 +190,12 @@ public class frameAnggrek extends javax.swing.JFrame {
         jLabel25.setText("Asal                    ");
         jPanel6.add(jLabel25);
 
+        jlabel36.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
+        jlabel36.setText("Pohon Inang");
+        jPanel6.add(jlabel36);
+
         jPanel7.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel7.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
+        jPanel7.setLayout(new java.awt.GridLayout(7, 1, 0, 15));
 
         jLabel26.setFont(new java.awt.Font("Poppins SemiBold", 0, 16)); // NOI18N
         jLabel26.setText(":");
@@ -207,8 +221,12 @@ public class frameAnggrek extends javax.swing.JFrame {
         jLabel31.setText(":");
         jPanel7.add(jLabel31);
 
+        jLabel34.setFont(new java.awt.Font("Poppins SemiBold", 0, 16)); // NOI18N
+        jLabel34.setText(":");
+        jPanel7.add(jLabel34);
+
         jPanel8.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel8.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
+        jPanel8.setLayout(new java.awt.GridLayout(7, 1, 0, 15));
 
         lNama.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         lNama.setText("jLabel14");
@@ -234,6 +252,10 @@ public class frameAnggrek extends javax.swing.JFrame {
         lAsal.setText("jLabel14");
         jPanel8.add(lAsal);
 
+        lInang.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
+        lInang.setText("jLabel14");
+        jPanel8.add(lInang);
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -252,20 +274,20 @@ public class frameAnggrek extends javax.swing.JFrame {
             .addComponent(jPanel6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, 306, Short.MAX_VALUE))
+                .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, 318, Short.MAX_VALUE))
             .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
+        jPanel1.setLayout(new java.awt.GridLayout(7, 1, 0, 15));
 
         jLabel2.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         jLabel2.setText("Nama Bunga         ");
         jPanel1.add(jLabel2);
 
-        jLabel15.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
-        jLabel15.setText("Warna Bunga         ");
-        jPanel1.add(jLabel15);
+        jLabel8.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
+        jLabel8.setText("Warna Bunga         ");
+        jPanel1.add(jLabel8);
 
         jLabel4.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         jLabel4.setText("Pertulangan Daun  ");
@@ -283,12 +305,20 @@ public class frameAnggrek extends javax.swing.JFrame {
         jLabel7.setText("Asal                    ");
         jPanel1.add(jLabel7);
 
+        jlabel.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
+        jlabel.setText("Pohon Inang");
+        jPanel1.add(jlabel);
+
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel4.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
+        jPanel4.setLayout(new java.awt.GridLayout(7, 1, 0, 15));
 
         jLabel14.setFont(new java.awt.Font("Poppins SemiBold", 0, 16)); // NOI18N
         jLabel14.setText(":");
         jPanel4.add(jLabel14);
+
+        jLabel15.setFont(new java.awt.Font("Poppins SemiBold", 0, 16)); // NOI18N
+        jLabel15.setText(":");
+        jPanel4.add(jLabel15);
 
         jLabel16.setFont(new java.awt.Font("Poppins SemiBold", 0, 16)); // NOI18N
         jLabel16.setText(":");
@@ -311,7 +341,7 @@ public class frameAnggrek extends javax.swing.JFrame {
         jPanel4.add(jLabel32);
 
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel5.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
+        jPanel5.setLayout(new java.awt.GridLayout(7, 1, 0, 15));
 
         tNama.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         tNama.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -322,17 +352,17 @@ public class frameAnggrek extends javax.swing.JFrame {
         jPanel5.add(tNama);
 
         cWarna.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
-        cWarna.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Putih", "Kuning", "Merah Muda", "Merah Tua" }));
+        cWarna.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Merah muda", "Putih", "Ungu" }));
         cWarna.addActionListener(this::cWarnaActionPerformed);
         jPanel5.add(cWarna);
 
         cDaun.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
-        cDaun.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Sejajar ", "Menyirip", "Menjari" }));
+        cDaun.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Menyirip", "Sejajar", "Menjari" }));
         cDaun.addActionListener(this::cDaunActionPerformed);
         jPanel5.add(cDaun);
 
         cBatang.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
-        cBatang.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Batang Keras ", "Batang Lunak" }));
+        cBatang.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Batang Keras", "Batang Lunak" }));
         cBatang.addActionListener(this::cBatangActionPerformed);
         jPanel5.add(cBatang);
 
@@ -351,6 +381,14 @@ public class frameAnggrek extends javax.swing.JFrame {
             }
         });
         jPanel5.add(tAsal);
+
+        tInang.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
+        tInang.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                tInangKeyReleased(evt);
+            }
+        });
+        jPanel5.add(tInang);
 
         lblBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/arrow left.png"))); // NOI18N
         lblBack.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -372,7 +410,7 @@ public class frameAnggrek extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(149, 149, 149)
+                                .addGap(160, 160, 160)
                                 .addComponent(bSimpan, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(70, 70, 70)
                                 .addComponent(bReset, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -380,18 +418,18 @@ public class frameAnggrek extends javax.swing.JFrame {
                                 .addGap(19, 19, 19)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel2Layout.createSequentialGroup()
-                                        .addComponent(lblBack, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(156, 156, 156)
-                                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(lblBack, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(157, 157, 157)
+                                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                         .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addGroup(jPanel2Layout.createSequentialGroup()
                                             .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 4, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                             .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 451, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                        .addGap(0, 9, Short.MAX_VALUE))
+                        .addGap(0, 30, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(tUser, javax.swing.GroupLayout.PREFERRED_SIZE, 578, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -406,17 +444,17 @@ public class frameAnggrek extends javax.swing.JFrame {
                     .addComponent(lblBack, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 350, Short.MAX_VALUE))
-                .addGap(20, 20, 20)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 422, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(bSimpan, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(bReset, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(tUser, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(tUser, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -441,6 +479,21 @@ public class frameAnggrek extends javax.swing.JFrame {
         simpan();
     }//GEN-LAST:event_tNamaKeyReleased
 
+    private void cWarnaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cWarnaActionPerformed
+        // TODO add your handling code here:
+        simpan();
+    }//GEN-LAST:event_cWarnaActionPerformed
+
+    private void cDaunActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cDaunActionPerformed
+        // TODO add your handling code here:
+        simpan();
+    }//GEN-LAST:event_cDaunActionPerformed
+
+    private void cBatangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cBatangActionPerformed
+        // TODO add your handling code here:
+        simpan();
+    }//GEN-LAST:event_cBatangActionPerformed
+
     private void tAromaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tAromaKeyReleased
         // TODO add your handling code here:
         simpan();
@@ -451,10 +504,10 @@ public class frameAnggrek extends javax.swing.JFrame {
         simpan();
     }//GEN-LAST:event_tAsalKeyReleased
 
-    private void cBatangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cBatangActionPerformed
+    private void tInangKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tInangKeyReleased
         // TODO add your handling code here:
         simpan();
-    }//GEN-LAST:event_cBatangActionPerformed
+    }//GEN-LAST:event_tInangKeyReleased
 
     private void lblBackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBackMouseClicked
         // TODO add your handling code here:
@@ -462,16 +515,6 @@ public class frameAnggrek extends javax.swing.JFrame {
 
         dispose();
     }//GEN-LAST:event_lblBackMouseClicked
-
-    private void cWarnaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cWarnaActionPerformed
-        // TODO add your handling code here:
-        simpan();
-    }//GEN-LAST:event_cWarnaActionPerformed
-
-    private void cDaunActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cDaunActionPerformed
-        // TODO add your handling code here:
-        simpan();
-    }//GEN-LAST:event_cDaunActionPerformed
 
     /**
      * @param args the command line arguments
@@ -526,10 +569,12 @@ public class frameAnggrek extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -538,15 +583,19 @@ public class frameAnggrek extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
+    private javax.swing.JLabel jlabel;
+    private javax.swing.JLabel jlabel36;
     private javax.swing.JLabel lAroma;
     private javax.swing.JLabel lAsal;
     private javax.swing.JLabel lBatang;
     private javax.swing.JLabel lDaun;
+    private javax.swing.JLabel lInang;
     private javax.swing.JLabel lNama;
     private javax.swing.JLabel lWarna;
     private javax.swing.JLabel lblBack;
     private javax.swing.JTextField tAroma;
     private javax.swing.JTextField tAsal;
+    private javax.swing.JTextField tInang;
     private javax.swing.JTextField tNama;
     private javax.swing.JLabel tUser;
     // End of variables declaration//GEN-END:variables

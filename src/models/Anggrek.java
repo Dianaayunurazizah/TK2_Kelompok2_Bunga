@@ -9,7 +9,7 @@ package models;
  * @author Admin
  */
 public class Anggrek extends Bunga{
-    String pohonInang;
+   private String pohonInang;
     
     public Anggrek(){
         pohonInang= "";
