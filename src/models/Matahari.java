@@ -8,78 +8,24 @@ package models;
  *
  * @author ThinkPad
  */
-public class Matahari {
-    private String nama;
-    private String warna;
-    private String pertulanganDaun;
-    private String jenisBatang;
-    private String aroma;
-    private String asal;
+public class Matahari extends Bunga {
 
-    public Matahari(){
-        nama = "";
-        warna = "";
-        pertulanganDaun = "";
-        jenisBatang = "";
-        aroma = "";
-        asal = "";
-    }
-    public Matahari(String nama, String warna, String pertulanganDaun, String jenisBatang, String aroma, String asal) {
-        this.nama = nama;
-        this.warna = warna;
-        this.pertulanganDaun = pertulanganDaun;
-        this.jenisBatang = jenisBatang;
-        this.aroma = aroma;
-        this.asal = asal;
+    private String fungsiBiji;
+
+    public Matahari() {
+        fungsiBiji = "";
     }
 
-    public void setNama(String nama) {
-        this.nama = nama;
+    public Matahari(String fungsiBiji) {
+        this.fungsiBiji = fungsiBiji;
     }
 
-    public void setWarna(String warna) {
-        this.warna = warna;
+    public void setFungsiBiji(String fungsiBiji) {
+        this.fungsiBiji = fungsiBiji;
     }
 
-    public void setPertulanganDaun(String pertulanganDaun) {
-        this.pertulanganDaun = pertulanganDaun;
+    public String getFungsiBiji() {
+        return fungsiBiji;
     }
 
-    public void setJenisBatang(String jenisBatang) {
-        this.jenisBatang = jenisBatang;
-    }
-
-    public void setAroma(String aroma) {
-        this.aroma = aroma;
-    }
-
-    public void setAsal(String asal) {
-        this.asal = asal;
-    }
-
-    public String getNama() {
-        return nama;
-    }
-
-    public String getWarna() {
-        return warna;
-    }
-
-    public String getPertulanganDaun() {
-        return pertulanganDaun;
-    }
-
-    public String getJenisBatang() {
-        return jenisBatang;
-    }
-
-    public String getAroma() {
-        return aroma;
-    }
-
-    public String getAsal() {
-        return asal;
-    }
-     
-    
 }
