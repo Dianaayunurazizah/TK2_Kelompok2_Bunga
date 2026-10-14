@@ -76,7 +76,7 @@ public class Bunga1 {
         
         System.out.println("");
        
-        Matahari bunga4 = new Matahari("Lily", "Putih", "Sejajar", "Batang Semu", "Lembut nyaris tidak beraroma", "Afrika Selatan");
+        Matahari bunga4 = new Matahari();
         
         bunga4.setNama("Matahari");
         bunga4.setWarna("Kuning");
@@ -84,6 +84,7 @@ public class Bunga1 {
         bunga4.setJenisBatang("Tegak dan Kokoh");
         bunga4.setAroma("Khas dan lembut");
         bunga4.setAsal("Amerika utara");
+        bunga4.setFungsiBiji("Bisa di makan");
         
         System.out.println("Nama\t\t\t:" + bunga4.getNama());
         System.out.println("Warna\t\t\t:" + bunga4.getWarna());
@@ -91,6 +92,7 @@ public class Bunga1 {
         System.out.println("Jenis Batang\t\t:" + bunga4.getJenisBatang());
         System.out.println("Aroma\t\t\t:" + bunga4.getAroma());
         System.out.println("Asal\t\t\t:" + bunga4.getAsal());
+        System.out.println("Fungsi Biji\t\t:" + bunga4.getFungsiBiji());
         
         System.out.println("");
         
