@@ -44,7 +44,7 @@ public class Bunga1 {
         bunga2.setJenisBatang("Batang Berkayu");
         bunga2.setAroma("Wangi");
         bunga2.setAsal("Asia Selatan, Asia Tenggara, dan Indonesia");
-        bunga2.setLamaWangi("Asia Selatan, Asia Tenggara, dan Indonesia");
+        bunga2.setLamaWangi("3 Harian");
         
         System.out.println("Nama\t\t\t:" + bunga2.getNama());
         System.out.println("Warna\t\t\t:" + bunga2.getWarna());
