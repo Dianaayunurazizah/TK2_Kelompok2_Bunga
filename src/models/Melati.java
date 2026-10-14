@@ -14,7 +14,7 @@ public class Melati extends Bunga{
     public Melati(){
         lamaWangi="";
     }
-    public Melati(String lamaWangi, String nama, String warna, String pertulanganDaun, String jenisBatang, String aroma, String asal) {
+    public Melati(String nama, String warna, String pertulanganDaun, String jenisBatang, String aroma, String asal, String lamaWangi) {
         super(nama, warna, pertulanganDaun, jenisBatang, aroma, asal);
         this.lamaWangi = lamaWangi;
     }
