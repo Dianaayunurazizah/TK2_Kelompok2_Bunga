@@ -39,6 +39,7 @@ public class frameMawar extends javax.swing.JFrame {
         tNama.setText(null);
         tAroma.setText(null);
         tAsal.setText(null);
+        tJumlahDuri.setText(null);
         
         lNama.setText(null);
         lWarna.setText(null);
@@ -46,6 +47,7 @@ public class frameMawar extends javax.swing.JFrame {
         lBatang.setText(null);
         lAroma.setText(null);
         lAsal.setText(null);
+        lJumlahDuri.setText(null);
     }
     void simpan(){
         Mawar bunga1 = new Mawar();
@@ -56,6 +58,7 @@ public class frameMawar extends javax.swing.JFrame {
         bunga1.setJenisBatang(cBatang.getSelectedItem().toString());
         bunga1.setAroma(tAroma.getText());
         bunga1.setAsal(tAsal.getText());
+        bunga1.setJumlahDuri(tJumlahDuri.getText());
 
         lNama.setText(bunga1.getNama());
         lWarna.setText(bunga1.getWarna());
@@ -63,6 +66,7 @@ public class frameMawar extends javax.swing.JFrame {
         lBatang.setText(bunga1.getJenisBatang());
         lAroma.setText(bunga1.getAroma());
         lAsal.setText(bunga1.getAsal());
+        lJumlahDuri.setText(bunga1.getJumlahDuri());
     }
 
     /**
@@ -87,6 +91,7 @@ public class frameMawar extends javax.swing.JFrame {
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
@@ -94,6 +99,7 @@ public class frameMawar extends javax.swing.JFrame {
         jLabel29 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         lNama = new javax.swing.JLabel();
         lWarna = new javax.swing.JLabel();
@@ -101,6 +107,7 @@ public class frameMawar extends javax.swing.JFrame {
         lBatang = new javax.swing.JLabel();
         lAroma = new javax.swing.JLabel();
         lAsal = new javax.swing.JLabel();
+        lJumlahDuri = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -108,6 +115,7 @@ public class frameMawar extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
@@ -115,6 +123,7 @@ public class frameMawar extends javax.swing.JFrame {
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         tNama = new javax.swing.JTextField();
         cWarna = new javax.swing.JComboBox<>();
@@ -122,6 +131,7 @@ public class frameMawar extends javax.swing.JFrame {
         cBatang = new javax.swing.JComboBox<>();
         tAroma = new javax.swing.JTextField();
         tAsal = new javax.swing.JTextField();
+        tJumlahDuri = new javax.swing.JTextField();
         lblBack = new javax.swing.JLabel();
         tUser = new javax.swing.JLabel();
 
@@ -156,7 +166,7 @@ public class frameMawar extends javax.swing.JFrame {
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Output", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Poppins Medium", 0, 16))); // NOI18N
 
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel6.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
+        jPanel6.setLayout(new java.awt.GridLayout(7, 1, 0, 15));
 
         jLabel20.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         jLabel20.setText("Nama Bunga         ");
@@ -182,8 +192,12 @@ public class frameMawar extends javax.swing.JFrame {
         jLabel25.setText("Asal                    ");
         jPanel6.add(jLabel25);
 
+        jLabel33.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
+        jLabel33.setText("Jumlah Duri");
+        jPanel6.add(jLabel33);
+
         jPanel7.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel7.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
+        jPanel7.setLayout(new java.awt.GridLayout(7, 1, 0, 15));
 
         jLabel26.setFont(new java.awt.Font("Poppins SemiBold", 0, 16)); // NOI18N
         jLabel26.setText(":");
@@ -209,8 +223,12 @@ public class frameMawar extends javax.swing.JFrame {
         jLabel31.setText(":");
         jPanel7.add(jLabel31);
 
+        jLabel34.setFont(new java.awt.Font("Poppins SemiBold", 0, 16)); // NOI18N
+        jLabel34.setText(":");
+        jPanel7.add(jLabel34);
+
         jPanel8.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel8.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
+        jPanel8.setLayout(new java.awt.GridLayout(7, 1, 0, 15));
 
         lNama.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         lNama.setText("jLabel14");
@@ -236,6 +254,10 @@ public class frameMawar extends javax.swing.JFrame {
         lAsal.setText("jLabel14");
         jPanel8.add(lAsal);
 
+        lJumlahDuri.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
+        lJumlahDuri.setText("jLabel14");
+        jPanel8.add(lJumlahDuri);
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -259,7 +281,7 @@ public class frameMawar extends javax.swing.JFrame {
         );
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
+        jPanel1.setLayout(new java.awt.GridLayout(7, 1, 0, 15));
 
         jLabel2.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         jLabel2.setText("Nama Bunga         ");
@@ -285,8 +307,12 @@ public class frameMawar extends javax.swing.JFrame {
         jLabel7.setText("Asal                    ");
         jPanel1.add(jLabel7);
 
+        jLabel8.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
+        jLabel8.setText("Jumlah Duri");
+        jPanel1.add(jLabel8);
+
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel4.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
+        jPanel4.setLayout(new java.awt.GridLayout(7, 1, 0, 15));
 
         jLabel14.setFont(new java.awt.Font("Poppins SemiBold", 0, 16)); // NOI18N
         jLabel14.setText(":");
@@ -312,8 +338,12 @@ public class frameMawar extends javax.swing.JFrame {
         jLabel19.setText(":");
         jPanel4.add(jLabel19);
 
+        jLabel32.setFont(new java.awt.Font("Poppins SemiBold", 0, 16)); // NOI18N
+        jLabel32.setText(":");
+        jPanel4.add(jLabel32);
+
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel5.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
+        jPanel5.setLayout(new java.awt.GridLayout(7, 1, 0, 15));
 
         tNama.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         tNama.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -334,7 +364,7 @@ public class frameMawar extends javax.swing.JFrame {
         jPanel5.add(cDaun);
 
         cBatang.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
-        cBatang.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Batang Keras", "Batang Lunak", "Rumput" }));
+        cBatang.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Batang Keras", "Batang Lunak", "Rumput", "Berduri" }));
         cBatang.addActionListener(this::cBatangActionPerformed);
         jPanel5.add(cBatang);
 
@@ -353,6 +383,14 @@ public class frameMawar extends javax.swing.JFrame {
             }
         });
         jPanel5.add(tAsal);
+
+        tJumlahDuri.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
+        tJumlahDuri.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                tJumlahDuriKeyReleased(evt);
+            }
+        });
+        jPanel5.add(tJumlahDuri);
 
         lblBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/arrow left.png"))); // NOI18N
         lblBack.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -419,7 +457,7 @@ public class frameMawar extends javax.swing.JFrame {
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(tUser, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(10, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel2, java.awt.BorderLayout.CENTER);
@@ -475,6 +513,11 @@ public class frameMawar extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_lblBackMouseClicked
 
+    private void tJumlahDuriKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tJumlahDuriKeyReleased
+        // TODO add your handling code here:
+        simpan();
+    }//GEN-LAST:event_tJumlahDuriKeyReleased
+
     /**
      * @param args the command line arguments
      */
@@ -528,10 +571,14 @@ public class frameMawar extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -544,11 +591,13 @@ public class frameMawar extends javax.swing.JFrame {
     private javax.swing.JLabel lAsal;
     private javax.swing.JLabel lBatang;
     private javax.swing.JLabel lDaun;
+    private javax.swing.JLabel lJumlahDuri;
     private javax.swing.JLabel lNama;
     private javax.swing.JLabel lWarna;
     private javax.swing.JLabel lblBack;
     private javax.swing.JTextField tAroma;
     private javax.swing.JTextField tAsal;
+    private javax.swing.JTextField tJumlahDuri;
     private javax.swing.JTextField tNama;
     private javax.swing.JLabel tUser;
     // End of variables declaration//GEN-END:variables
