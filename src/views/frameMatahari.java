@@ -36,6 +36,7 @@ public class frameMatahari extends javax.swing.JFrame {
         tNama.setText(null);
         tAroma.setText(null);
         tAsal.setText(null);
+        tFungsiBiji.setText(null);
         
         lNama.setText(null);
         lWarna.setText(null);
@@ -43,6 +44,7 @@ public class frameMatahari extends javax.swing.JFrame {
         lBatang.setText(null);
         lAroma.setText(null);
         lAsal.setText(null);
+        lFungsiBiji.setText(null);
     }
      
      
@@ -55,6 +57,7 @@ public class frameMatahari extends javax.swing.JFrame {
         bunga.setJenisBatang(cBatang.getSelectedItem().toString());
         bunga.setAroma(tAroma.getText());
         bunga.setAsal(tAsal.getText());
+        bunga.setFungsiBiji(tFungsiBiji.getText());
 
         lNama.setText(bunga.getNama());
         lWarna.setText(bunga.getWarna());
@@ -62,6 +65,7 @@ public class frameMatahari extends javax.swing.JFrame {
         lBatang.setText(bunga.getJenisBatang());
         lAroma.setText(bunga.getAroma());
         lAsal.setText(bunga.getAsal());
+        lFungsiBiji.setText(bunga.getFungsiBiji());
     }
 
     /**
@@ -85,6 +89,7 @@ public class frameMatahari extends javax.swing.JFrame {
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
@@ -92,6 +97,7 @@ public class frameMatahari extends javax.swing.JFrame {
         jLabel29 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         lNama = new javax.swing.JLabel();
         lWarna = new javax.swing.JLabel();
@@ -99,6 +105,7 @@ public class frameMatahari extends javax.swing.JFrame {
         lBatang = new javax.swing.JLabel();
         lAroma = new javax.swing.JLabel();
         lAsal = new javax.swing.JLabel();
+        lFungsiBiji = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -106,6 +113,7 @@ public class frameMatahari extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
@@ -113,6 +121,7 @@ public class frameMatahari extends javax.swing.JFrame {
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         tNama = new javax.swing.JTextField();
         cWarna = new javax.swing.JComboBox<>();
@@ -120,6 +129,7 @@ public class frameMatahari extends javax.swing.JFrame {
         cBatang = new javax.swing.JComboBox<>();
         tAroma = new javax.swing.JTextField();
         tAsal = new javax.swing.JTextField();
+        tFungsiBiji = new javax.swing.JTextField();
         lblBack = new javax.swing.JLabel();
         tUser = new javax.swing.JLabel();
 
@@ -152,7 +162,7 @@ public class frameMatahari extends javax.swing.JFrame {
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Output", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Poppins Medium", 0, 16))); // NOI18N
 
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel6.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
+        jPanel6.setLayout(new java.awt.GridLayout(7, 1, 0, 15));
 
         jLabel20.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         jLabel20.setText("Nama Bunga         ");
@@ -178,8 +188,12 @@ public class frameMatahari extends javax.swing.JFrame {
         jLabel25.setText("Asal                    ");
         jPanel6.add(jLabel25);
 
+        jLabel33.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
+        jLabel33.setText("Fungsi Biji");
+        jPanel6.add(jLabel33);
+
         jPanel7.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel7.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
+        jPanel7.setLayout(new java.awt.GridLayout(7, 1, 0, 15));
 
         jLabel26.setFont(new java.awt.Font("Poppins SemiBold", 0, 16)); // NOI18N
         jLabel26.setText(":");
@@ -205,8 +219,12 @@ public class frameMatahari extends javax.swing.JFrame {
         jLabel31.setText(":");
         jPanel7.add(jLabel31);
 
+        jLabel34.setFont(new java.awt.Font("Poppins SemiBold", 0, 16)); // NOI18N
+        jLabel34.setText(":");
+        jPanel7.add(jLabel34);
+
         jPanel8.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel8.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
+        jPanel8.setLayout(new java.awt.GridLayout(7, 1, 0, 15));
 
         lNama.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         lNama.setText("jLabel14");
@@ -232,6 +250,10 @@ public class frameMatahari extends javax.swing.JFrame {
         lAsal.setText("jLabel14");
         jPanel8.add(lAsal);
 
+        lFungsiBiji.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
+        lFungsiBiji.setText("jLabel14");
+        jPanel8.add(lFungsiBiji);
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -243,7 +265,7 @@ public class frameMatahari extends javax.swing.JFrame {
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 5, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 414, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -255,7 +277,7 @@ public class frameMatahari extends javax.swing.JFrame {
         );
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
+        jPanel1.setLayout(new java.awt.GridLayout(7, 1, 0, 15));
 
         jLabel2.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         jLabel2.setText("Nama Bunga         ");
@@ -281,8 +303,12 @@ public class frameMatahari extends javax.swing.JFrame {
         jLabel7.setText("Asal                    ");
         jPanel1.add(jLabel7);
 
+        jLabel8.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
+        jLabel8.setText("Fungsi Biji");
+        jPanel1.add(jLabel8);
+
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel4.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
+        jPanel4.setLayout(new java.awt.GridLayout(7, 1, 0, 15));
 
         jLabel14.setFont(new java.awt.Font("Poppins SemiBold", 0, 16)); // NOI18N
         jLabel14.setText(":");
@@ -308,8 +334,12 @@ public class frameMatahari extends javax.swing.JFrame {
         jLabel19.setText(":");
         jPanel4.add(jLabel19);
 
+        jLabel32.setFont(new java.awt.Font("Poppins SemiBold", 0, 16)); // NOI18N
+        jLabel32.setText(":");
+        jPanel4.add(jLabel32);
+
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel5.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
+        jPanel5.setLayout(new java.awt.GridLayout(7, 1, 0, 15));
 
         tNama.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
         tNama.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -350,6 +380,14 @@ public class frameMatahari extends javax.swing.JFrame {
         });
         jPanel5.add(tAsal);
 
+        tFungsiBiji.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
+        tFungsiBiji.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                tFungsiBijiKeyReleased(evt);
+            }
+        });
+        jPanel5.add(tFungsiBiji);
+
         lblBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/arrow left.png"))); // NOI18N
         lblBack.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -365,6 +403,9 @@ public class frameMatahari extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(tUser, javax.swing.GroupLayout.PREFERRED_SIZE, 611, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
@@ -379,31 +420,28 @@ public class frameMatahari extends javax.swing.JFrame {
                                 .addComponent(lblBack, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(166, 166, 166)
                                 .addComponent(jLabel1))
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(jPanel2Layout.createSequentialGroup()
-                                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 451, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 451, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(36, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(tUser, javax.swing.GroupLayout.PREFERRED_SIZE, 611, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(22, 22, 22)
+                .addGap(0, 0, 0)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(lblBack, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 350, Short.MAX_VALUE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 350, Short.MAX_VALUE)
+                        .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(20, 20, 20)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(bSimpan, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -468,6 +506,11 @@ public class frameMatahari extends javax.swing.JFrame {
         simpan();
     }//GEN-LAST:event_cBatangActionPerformed
 
+    private void tFungsiBijiKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tFungsiBijiKeyReleased
+        // TODO add your handling code here:
+        simpan();
+    }//GEN-LAST:event_tFungsiBijiKeyReleased
+
     /**
      * @param args the command line arguments
      */
@@ -520,10 +563,14 @@ public class frameMatahari extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -536,11 +583,13 @@ public class frameMatahari extends javax.swing.JFrame {
     private javax.swing.JLabel lAsal;
     private javax.swing.JLabel lBatang;
     private javax.swing.JLabel lDaun;
+    private javax.swing.JLabel lFungsiBiji;
     private javax.swing.JLabel lNama;
     private javax.swing.JLabel lWarna;
     private javax.swing.JLabel lblBack;
     private javax.swing.JTextField tAroma;
     private javax.swing.JTextField tAsal;
+    private javax.swing.JTextField tFungsiBiji;
     private javax.swing.JTextField tNama;
     private javax.swing.JLabel tUser;
     // End of variables declaration//GEN-END:variables
