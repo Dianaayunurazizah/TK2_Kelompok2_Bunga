@@ -8,15 +8,21 @@ package models;
  *
  * @author user
  */
-public class Sakura extends Bunga{
+public class Sakura extends Bunga {
 
     private String tradisiMekar;
-    
-    public Sakura(){
+
+    public Sakura() {
         tradisiMekar = "";
     }
 
+    public Sakura(String nama, String warna, String pertulanganDaun, String jenisBatang, String aroma, String asal, String tradisiMekar) {
+        super(nama, warna, pertulanganDaun, jenisBatang, aroma, asal);
+        this.tradisiMekar = tradisiMekar;
+    }
+
     public Sakura(String tradisiMekar) {
+        super();
         this.tradisiMekar = tradisiMekar;
     }
 
@@ -28,6 +34,4 @@ public class Sakura extends Bunga{
         return tradisiMekar;
     }
 
-   
 }
-   

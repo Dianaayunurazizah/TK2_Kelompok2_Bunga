@@ -16,7 +16,13 @@ public class Mawar extends Bunga{
         jumlahDuri = "";
     }
 
-    public Mawar(String nama, String warna, String pertulanganDaun, String jenisBatang, String aroma, String asal) {
+    public Mawar(String nama, String warna, String pertulanganDaun, String jenisBatang, String aroma, String asal, String jumlahDuri) {
+        super(nama, warna, pertulanganDaun, jenisBatang, aroma, asal);
+        this.jumlahDuri = jumlahDuri;
+    }
+    
+    public Mawar(String jumlahDuri) {
+        super();
         this.jumlahDuri = jumlahDuri;
     }
 

@@ -8,25 +8,30 @@ package models;
  *
  * @author Admin
  */
-public class Anggrek extends Bunga{
-   private String pohonInang;
-    
-    public Anggrek(){
-        pohonInang= "";
+public class Anggrek extends Bunga {
+
+    private String pohonInang;
+
+    public Anggrek() {
+        pohonInang = "";
     }
 
-    public Anggrek(String pohonInanng) {
-        this.pohonInang = pohonInanng;
+    public Anggrek(String nama, String warna, String pertulanganDaun, String jenisBatang, String aroma, String asal, String pohonInang) {
+        super(nama, warna, pertulanganDaun, jenisBatang, aroma, asal);
+        this.pohonInang = pohonInang;
     }
 
-    public String getPohonInang() {
-        return pohonInang;
+    public Anggrek(String pohonInang) {
+        super();
+        this.pohonInang = pohonInang;
     }
 
     public void setPohonInang(String pohonInang) {
         this.pohonInang = pohonInang;
     }
-    
-    
+
+    public String getPohonInang() {
+        return pohonInang;
+    }
 
 }

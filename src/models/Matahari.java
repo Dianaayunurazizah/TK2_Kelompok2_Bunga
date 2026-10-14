@@ -16,7 +16,13 @@ public class Matahari extends Bunga {
         fungsiBiji = "";
     }
 
+    public Matahari(String nama, String warna, String pertulanganDaun, String jenisBatang, String aroma, String asal, String fungsiBiji) {
+        super(nama, warna, pertulanganDaun, jenisBatang, aroma, asal);
+        this.fungsiBiji = fungsiBiji;
+    }
+    
     public Matahari(String fungsiBiji) {
+        super();
         this.fungsiBiji = fungsiBiji;
     }
 
