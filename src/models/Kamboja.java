@@ -16,16 +16,22 @@ public class Kamboja extends Bunga{
         ciriGetah = "";
     }
 
+    public Kamboja(String ciriGetah, String nama, String warna, String pertulanganDaun, String jenisBatang, String aroma, String asal) {
+        super(nama, warna, pertulanganDaun, jenisBatang, aroma, asal);
+        this.ciriGetah = ciriGetah;
+    }
+
     public Kamboja(String ciriGetah) {
+        super();
+        this.ciriGetah = ciriGetah;
+    }
+    
+    public void setCiriGetah(String ciriGetah) {
         this.ciriGetah = ciriGetah;
     }
 
     public String getCiriGetah() {
         return ciriGetah;
-    }
-
-    public void setCiriGetah(String ciriGetah) {
-        this.ciriGetah = ciriGetah;
     }
 
 }
