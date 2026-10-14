@@ -94,7 +94,7 @@ public class Bunga1 {
         
         System.out.println("");
         
-        Sakura bunga5 = new Sakura("Lily", "Putih", "Sejajar", "Batang Semu", "Lembut nyaris tidak beraroma", "Afrika Selatan");
+        Sakura bunga5 = new Sakura();
         
         bunga5.setNama("Sakura");
         bunga5.setWarna("Merah muda");

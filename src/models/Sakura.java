@@ -8,79 +8,26 @@ package models;
  *
  * @author user
  */
-public class Sakura {
+public class Sakura extends Bunga{
 
-    private String nama;
-    private String warna;
-    private String pertulanganDaun;
-    private String jenisBatang;
-    private String aroma;
-    private String asal;
+    private String tradisiMekar;
     
     public Sakura(){
-        nama = "";
-        warna = "";
-        pertulanganDaun = "";
-        jenisBatang = "";
-        aroma = "";
-        asal = "";
+        tradisiMekar = "";
     }
 
-    public Sakura(String nama, String warna, String pertulanganDaun, String jenisBatang, String aroma, String asal) {
-        this.nama = nama;
-        this.warna = warna;
-        this.pertulanganDaun = pertulanganDaun;
-        this.jenisBatang = jenisBatang;
-        this.aroma = aroma;
-        this.asal = asal;
+    public Sakura(String tradisiMekar) {
+        this.tradisiMekar = tradisiMekar;
     }
 
-    public void setNama(String nama) {
-        this.nama = nama;
+    public void setTradisiMekar(String tradisiMekar) {
+        this.tradisiMekar = tradisiMekar;
     }
 
-    public void setWarna(String warna) {
-        this.warna = warna;
+    public String getTradisiMekar() {
+        return tradisiMekar;
     }
 
-    public void setPertulanganDaun(String pertulanganDaun) {
-        this.pertulanganDaun = pertulanganDaun;
-    }
-
-    public void setJenisBatang(String jenisBatang) {
-        this.jenisBatang = jenisBatang;
-    }
-
-    public void setAroma(String aroma) {
-        this.aroma = aroma;
-    }
-
-    public void setAsal(String asal) {
-        this.asal = asal;
-    }
-
-    public String getNama() {
-        return nama;
-    }
-
-    public String getWarna() {
-        return warna;
-    }
-
-    public String getPertulanganDaun() {
-        return pertulanganDaun;
-    }
-
-    public String getJenisBatang() {
-        return jenisBatang;
-    }
-
-    public String getAroma() {
-        return aroma;
-    }
-
-    public String getAsal() {
-        return asal;
-    }
-
+   
 }
+   
