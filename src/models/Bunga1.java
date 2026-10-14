@@ -102,6 +102,7 @@ public class Bunga1 {
         bunga5.setJenisBatang("Berkayu dan Bercabang");
         bunga5.setAroma("Ringan dan lembut");
         bunga5.setAsal("Jepang");
+        bunga5.setTradisiMekar("Hanami");
         
         System.out.println("Nama\t\t\t:" + bunga5.getNama());
         System.out.println("Warna\t\t\t:" + bunga5.getWarna());
@@ -109,6 +110,7 @@ public class Bunga1 {
         System.out.println("Jenis Batang\t\t:" + bunga5.getJenisBatang());
         System.out.println("Aroma\t\t\t:" + bunga5.getAroma());
         System.out.println("Asal\t\t\t:" + bunga5.getAsal());
+        System.out.println("Tradisi Mekar\t\t:" + bunga5.getTradisiMekar());
         
         System.out.println("");
         
