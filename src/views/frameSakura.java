@@ -302,7 +302,7 @@ public class frameSakura extends javax.swing.JFrame {
         jPanel1.add(jLabel7);
 
         jLabel8.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
-        jLabel8.setText("Fungsi Biji");
+        jLabel8.setText("Tradisi Mekar");
         jPanel1.add(jLabel8);
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
@@ -514,6 +514,7 @@ public class frameSakura extends javax.swing.JFrame {
 
     private void tTradisiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tTradisiActionPerformed
         // TODO add your handling code here:
+        simpan();
     }//GEN-LAST:event_tTradisiActionPerformed
 
     /**
