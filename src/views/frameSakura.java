@@ -187,7 +187,7 @@ public class frameSakura extends javax.swing.JFrame {
         jPanel6.add(jLabel25);
 
         jLabel33.setFont(new java.awt.Font("Poppins Medium", 0, 16)); // NOI18N
-        jLabel33.setText("Asal                    ");
+        jLabel33.setText("Tradisi Mekar                    ");
         jPanel6.add(jLabel33);
 
         jPanel7.setBackground(new java.awt.Color(255, 255, 255));
@@ -425,7 +425,7 @@ public class frameSakura extends javax.swing.JFrame {
                                         .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 4, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 451, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addGap(0, 30, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(tUser, javax.swing.GroupLayout.PREFERRED_SIZE, 578, javax.swing.GroupLayout.PREFERRED_SIZE)))
