@@ -9,26 +9,26 @@ import java.util.List;
 import java.util.UUID;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import Model.modelPembayaranKas;
+import models.modelPembayaranKas;
 
 /**
  *
  * @author Al
  */
-public class PanelKas extends javax.swing.JPanel {
+public class PanelKas_copy extends javax.swing.JPanel {
 
     /**
      * Creates new form PanelKelas
      */
-    public PanelKas() {
+    public PanelKas_copy() {
         initComponents();
-
+        
         loadTable();
-
+        
         tID.setVisible(false);
     }
-
-    void reset() {
+    
+    void reset(){
         tID.setText(null);
         cMahasiswa.setSelectedItem(null);
         tJumlahBayar.setText(null);
@@ -36,7 +36,7 @@ public class PanelKas extends javax.swing.JPanel {
         cStatus.setSelectedItem(null);
     }
 
-    void loadTable() {
+    void loadTable(){
         DefaultTableModel tabel = new DefaultTableModel();
         tabel.addColumn("ID Pembayaran");
         tabel.addColumn("Tanggal");
@@ -49,12 +49,12 @@ public class PanelKas extends javax.swing.JPanel {
         List<modelPembayaranKas> daftar = kas.tampilsemua();
 
         for (int i = 0; i < daftar.size(); i++) {
-            String id = daftar.get(i).getIdpembayaran();
+            String id = daftar.get(i).getIdPembayaran();
             String tanggal = daftar.get(i).getTanggal();
             String nama = daftar.get(i).getNim();
-            int nominal = daftar.get(i).getJumlahbayar();
+            int nominal = daftar.get(i).getJumlahBayar();
             String status = daftar.get(i).getStatus();
-            String pengguna = daftar.get(i).getIdpengguna();
+            String pengguna = daftar.get(i).getIdPengguna();
 
             Object[] baris = {id, tanggal, nama, nominal, status, pengguna};
             tabel.addRow(baris);
@@ -71,6 +71,7 @@ public class PanelKas extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel21 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
@@ -121,7 +122,9 @@ public class PanelKas extends javax.swing.JPanel {
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        btnCetak = new javax.swing.JButton();
+
+        jLabel21.setText("jLabel21");
 
         setLayout(new java.awt.CardLayout());
 
@@ -150,7 +153,7 @@ public class PanelKas extends javax.swing.JPanel {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblSelamatDatang)
                     .addComponent(jLabel1))
-                .addContainerGap(1057, Short.MAX_VALUE))
+                .addContainerGap(598, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -159,7 +162,7 @@ public class PanelKas extends javax.swing.JPanel {
                 .addComponent(lblSelamatDatang)
                 .addGap(0, 0, 0)
                 .addComponent(jLabel1)
-                .addContainerGap(10, Short.MAX_VALUE))
+                .addContainerGap(9, Short.MAX_VALUE))
         );
 
         jPanel5.add(jPanel2, java.awt.BorderLayout.PAGE_START);
@@ -194,7 +197,7 @@ public class PanelKas extends javax.swing.JPanel {
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel5)
                     .addComponent(jLabel6))
-                .addContainerGap(209, Short.MAX_VALUE))
+                .addContainerGap(67, Short.MAX_VALUE))
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -238,7 +241,7 @@ public class PanelKas extends javax.swing.JPanel {
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel7)
                     .addComponent(jLabel8))
-                .addContainerGap(196, Short.MAX_VALUE))
+                .addContainerGap(53, Short.MAX_VALUE))
         );
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -282,7 +285,7 @@ public class PanelKas extends javax.swing.JPanel {
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel9)
                     .addComponent(jLabel10))
-                .addContainerGap(182, Short.MAX_VALUE))
+                .addContainerGap(38, Short.MAX_VALUE))
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -341,7 +344,6 @@ public class PanelKas extends javax.swing.JPanel {
         jLabel20.setText("Status");
 
         cStatus.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "lunas", "cicil" }));
-        cStatus.addActionListener(this::cStatusActionPerformed);
 
         bUbah1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         bUbah1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/BoxiconsPencil.png"))); // NOI18N
@@ -377,12 +379,17 @@ public class PanelKas extends javax.swing.JPanel {
                                                 .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGap(187, 187, 187)))))
                             .addGroup(jPanel14Layout.createSequentialGroup()
-                                .addGap(40, 40, 40)
-                                .addComponent(jLabel11)
-                                .addGap(53, 53, 53)
-                                .addComponent(tPengguna, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(tID, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addContainerGap()
+                                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(jPanel14Layout.createSequentialGroup()
+                                        .addComponent(jLabel11)
+                                        .addGap(53, 53, 53)
+                                        .addComponent(tPengguna, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(tID, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(cStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jLabel20, javax.swing.GroupLayout.Alignment.LEADING)))))
                         .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel14Layout.createSequentialGroup()
                                 .addComponent(bUbah1, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -391,14 +398,11 @@ public class PanelKas extends javax.swing.JPanel {
                             .addComponent(btnBayar, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel14Layout.createSequentialGroup()
                         .addGap(12, 12, 12)
-                        .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel20)
-                            .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(tTanggal, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel14Layout.createSequentialGroup()
-                                    .addComponent(jLabel15)
-                                    .addGap(187, 187, 187)))
-                            .addComponent(cStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(tTanggal, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel14Layout.createSequentialGroup()
+                                .addComponent(jLabel15)
+                                .addGap(187, 187, 187)))))
                 .addContainerGap(16, Short.MAX_VALUE))
         );
         jPanel14Layout.setVerticalGroup(
@@ -427,9 +431,9 @@ public class PanelKas extends javax.swing.JPanel {
                 .addComponent(tTanggal, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel20)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(cStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
                 .addComponent(btnBayar, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -495,10 +499,9 @@ public class PanelKas extends javax.swing.JPanel {
         jLabel19.setForeground(new java.awt.Color(255, 0, 0));
         jLabel19.setText("RP 80.000");
 
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/HumbleiconsPrint (1).png"))); // NOI18N
-        jButton2.setText("Cetak Daftar Tunggakan");
-        jButton2.addActionListener(this::jButton2ActionPerformed);
+        btnCetak.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnCetak.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/HumbleiconsPrint (1).png"))); // NOI18N
+        btnCetak.setText("Cetak Daftar Tunggakan");
 
         javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
         jPanel17.setLayout(jPanel17Layout);
@@ -511,8 +514,8 @@ public class PanelKas extends javax.swing.JPanel {
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel17)
                     .addComponent(jLabel19))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 728, Short.MAX_VALUE)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 299, Short.MAX_VALUE)
+                .addComponent(btnCetak, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
         );
         jPanel17Layout.setVerticalGroup(
@@ -520,7 +523,7 @@ public class PanelKas extends javax.swing.JPanel {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel17Layout.createSequentialGroup()
                 .addContainerGap(11, Short.MAX_VALUE)
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCetak, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel17Layout.createSequentialGroup()
                         .addComponent(jLabel17)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -536,15 +539,6 @@ public class PanelKas extends javax.swing.JPanel {
         add(jPanel1, "card2");
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void tPeriodePropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_tPeriodePropertyChange
-        // TODO add your handling code here:
-        loadTable();
-    }//GEN-LAST:event_tPeriodePropertyChange
-
     private void btnBayarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBayarActionPerformed
         // TODO add your handling code here:
         String tanggal = new SimpleDateFormat("yyyy-MM-dd").format(tTanggal.getDate());
@@ -552,9 +546,9 @@ public class PanelKas extends javax.swing.JPanel {
                 UUID.randomUUID().toString(),
                 tanggal,
                 cMahasiswa.getSelectedItem().toString(),
+                Integer.parseInt(tJumlahBayar.getText()),
                 cStatus.getSelectedItem().toString(),
-                tID.getText(),
-                Integer.parseInt(tJumlahBayar.getText())
+                tID.getText()
         );
 
         boolean simpan = kas.tambah();
@@ -567,6 +561,41 @@ public class PanelKas extends javax.swing.JPanel {
         loadTable();
     }//GEN-LAST:event_btnBayarActionPerformed
 
+    private void tPeriodePropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_tPeriodePropertyChange
+        // TODO add your handling code here:
+        loadTable();
+    }//GEN-LAST:event_tPeriodePropertyChange
+
+    private void tPembayaranKasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tPembayaranKasMouseClicked
+        // TODO add your handling code here:
+        int baris = tPembayaranKas.getSelectedRow();
+
+        String id = tPembayaranKas.getValueAt(baris, 0).toString();
+        String tanggal = tPembayaranKas.getValueAt(baris, 1).toString();
+        String nama = tPembayaranKas.getValueAt(baris, 2).toString();
+        String jumlah = tPembayaranKas.getValueAt(baris, 3).toString();
+        String status = tPembayaranKas.getValueAt(baris, 4).toString();
+        String pengguna = tPembayaranKas.getValueAt(baris, 5).toString();
+
+        tID.setText(id);
+        
+        if (tanggal != null && !tanggal.isEmpty()) {
+            try {
+                tTanggal.setDate(java.sql.Date.valueOf(tanggal));
+            } catch (IllegalArgumentException e) {
+                // Jika gagal parsing tanggal, kosongkan field tanggal
+                tTanggal.setDate(null);
+            }
+        } else {
+            tTanggal.setDate(null);
+        }
+        
+        cMahasiswa.setSelectedItem(nama);
+        tJumlahBayar.setText(jumlah);
+        cStatus.setSelectedItem(status);
+        tPengguna.setText(pengguna);
+    }//GEN-LAST:event_tPembayaranKasMouseClicked
+
     private void bUbah1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bUbah1ActionPerformed
         // TODO add your handling code here:
         String tanggal = new SimpleDateFormat("yyyy-MM-dd").format(tTanggal.getDate());
@@ -574,9 +603,9 @@ public class PanelKas extends javax.swing.JPanel {
                 tID.getText(),
                 tanggal,
                 cMahasiswa.getSelectedItem().toString(),
+                Integer.parseInt(tJumlahBayar.getText()),
                 cStatus.getSelectedItem().toString(),
-                tID.getText(),
-                Integer.parseInt(tJumlahBayar.getText())
+                tID.getText()
         );
 
         boolean ubah = kas.ubah();
@@ -596,9 +625,9 @@ public class PanelKas extends javax.swing.JPanel {
                 tID.getText(),
                 tanggal,
                 cMahasiswa.getSelectedItem().toString(),
+                Integer.parseInt(tJumlahBayar.getText()),
                 cStatus.getSelectedItem().toString(),
-                tPengguna.getText(),
-                Integer.parseInt(tJumlahBayar.getText())
+                tPengguna.getText()
         );
 
         boolean hapus = kas.hapus();
@@ -608,51 +637,17 @@ public class PanelKas extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "Data Gagal Dihapus");
         }
         reset();
-        loadTable();
+        loadTable(); 
     }//GEN-LAST:event_bHapusActionPerformed
-
-    private void tPembayaranKasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tPembayaranKasMouseClicked
-        // TODO add your handling code here:
-        int baris = tPembayaranKas.getSelectedRow();
-
-        String id = tPembayaranKas.getValueAt(baris, 0).toString();
-        String tanggal = tPembayaranKas.getValueAt(baris, 1).toString();
-        String nama = tPembayaranKas.getValueAt(baris, 2).toString();
-        String jumlah = tPembayaranKas.getValueAt(baris, 3).toString();
-        String status = tPembayaranKas.getValueAt(baris, 4).toString();
-        String pengguna = tPembayaranKas.getValueAt(baris, 5).toString();
-
-        tID.setText(id);
-
-        if (tanggal != null && !tanggal.isEmpty()) {
-            try {
-                tTanggal.setDate(java.sql.Date.valueOf(tanggal));
-            } catch (IllegalArgumentException e) {
-                // Jika gagal parsing tanggal, kosongkan field tanggal
-                tTanggal.setDate(null);
-            }
-        } else {
-            tTanggal.setDate(null);
-        }
-
-        cMahasiswa.setSelectedItem(nama);
-        tJumlahBayar.setText(jumlah);
-        cStatus.setSelectedItem(status);
-        tPengguna.setText(pengguna);
-    }//GEN-LAST:event_tPembayaranKasMouseClicked
-
-    private void cStatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cStatusActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cStatusActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bHapus;
     private javax.swing.JButton bUbah1;
     private javax.swing.JButton btnBayar;
+    private javax.swing.JButton btnCetak;
     private javax.swing.JComboBox<String> cMahasiswa;
     private javax.swing.JComboBox<String> cStatus;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -666,6 +661,7 @@ public class PanelKas extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
